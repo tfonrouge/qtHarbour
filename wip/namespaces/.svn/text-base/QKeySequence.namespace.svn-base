@@ -1,4 +1,0 @@
-
-enum	SequenceFormat { NativeText, PortableText }
-enum	SequenceMatch { NoMatch, PartialMatch, ExactMatch }
-enum	StandardKey { AddTab, Back, Bold, Close, ..., ZoomOut }

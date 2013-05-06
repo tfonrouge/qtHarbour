@@ -1,8 +1,0 @@
-
-flags	CacheMode
-enum	CacheModeFlag { CacheNone, CacheBackground }
-enum	DragMode { NoDrag, ScrollHandDrag, RubberBandDrag }
-enum	OptimizationFlag { DontClipPainter, DontSavePainterState, DontAdjustForAntialiasing, IndirectPainting }
-flags	OptimizationFlags
-enum	ViewportAnchor { NoAnchor, AnchorViewCenter, AnchorUnderMouse }
-enum	ViewportUpdateMode { FullViewportUpdate, MinimalViewportUpdate, SmartViewportUpdate, BoundingRectViewportUpdate, NoViewportUpdate }

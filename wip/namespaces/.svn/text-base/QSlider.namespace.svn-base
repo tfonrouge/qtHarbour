@@ -1,2 +1,0 @@
-
-enum	TickPosition { NoTicks, TicksBothSides, TicksAbove, TicksBelow, TicksLeft, TicksRight }

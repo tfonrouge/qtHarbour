@@ -1,2 +1,0 @@
-
-enum  IconType { Computer, Desktop, Trashcan, Network, ..., File }

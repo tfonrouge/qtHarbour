@@ -1,3 +1,0 @@
-
-flags	OpenMode
-enum	OpenModeFlag { NotOpen, ReadOnly, WriteOnly, ReadWrite, ..., Unbuffered }

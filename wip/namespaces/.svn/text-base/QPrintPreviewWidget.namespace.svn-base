@@ -1,3 +1,0 @@
-
-enum  ViewMode { SinglePageView, FacingPagesView, AllPagesView }
-enum  ZoomMode { CustomZoom, FitToWidth, FitInView }

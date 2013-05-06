@@ -1,5 +1,0 @@
-
-enum	ActionEvent { Trigger, Hover }
-enum	MenuRole { NoRole, TextHeuristicRole, ApplicationSpecificRole, AboutQtRole, ..., QuitRole }
-enum	Priority { LowPriority, NormalPriority, HighPriority }
-enum	SoftKeyRole { NoSoftKey, PositiveSoftKey, NegativeSoftKey, SelectSoftKey }

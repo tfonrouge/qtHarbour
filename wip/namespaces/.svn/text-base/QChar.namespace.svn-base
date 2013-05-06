@@ -1,7 +1,0 @@
-
-enum  Category { Mark_NonSpacing, Mark_SpacingCombining, Mark_Enclosing, Number_DecimalDigit, ..., NoCategory }
-enum  Decomposition { NoDecomposition, Canonical, Circle, Compat, ..., Wide }
-enum  Direction { DirAL, DirAN, DirB, DirBN, ..., DirWS }
-enum  Joining { Center, Dual, OtherJoining, Right }
-enum  SpecialCharacter { Null, Nbsp, ReplacementCharacter, ObjectReplacementCharacter, ..., LineSeparator }
-enum  UnicodeVersion { Unicode_1_1, Unicode_2_0, Unicode_2_1_2, Unicode_3_0, ..., Unicode_Unassigned }

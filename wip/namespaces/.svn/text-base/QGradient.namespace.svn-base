@@ -1,4 +1,0 @@
-
-enum  CoordinateMode { LogicalMode, StretchToDeviceMode, ObjectBoundingMode }
-enum  Spread { PadSpread, RepeatSpread, ReflectSpread }
-enum  Type { LinearGradient, RadialGradient, ConicalGradient, NoGradient }

@@ -1,3 +1,0 @@
-
-enum  CompletionMode { PopupCompletion, InlineCompletion, UnfilteredPopupCompletion }
-enum  ModelSorting { UnsortedModel, CaseSensitivelySortedModel, CaseInsensitivelySortedModel }

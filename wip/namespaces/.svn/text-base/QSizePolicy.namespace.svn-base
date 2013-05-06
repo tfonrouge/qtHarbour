@@ -1,5 +1,0 @@
-
-enum	ControlType { DefaultType, ButtonBox, CheckBox, ComboBox, ..., ToolButton }
-flags	ControlTypes
-enum	Policy { Fixed, Minimum, Maximum, Preferred, ..., Ignored }
-enum	PolicyFlag { GrowFlag, ExpandFlag, ShrinkFlag, IgnoreFlag }

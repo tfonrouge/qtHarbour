@@ -1,4 +1,0 @@
-
-enum	ButtonPosition { LeftSide, RightSide }
-enum	SelectionBehavior { SelectLeftTab, SelectRightTab, SelectPreviousTab }
-enum	Shape { RoundedNorth, RoundedSouth, RoundedWest, RoundedEast, ..., TriangularEast }

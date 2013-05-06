@@ -1,3 +1,0 @@
-
-enum	TabPosition { North, South, West, East }
-enum	TabShape { Rounded, Triangular }

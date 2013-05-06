@@ -1,4 +1,0 @@
-
-enum	DockOption { AnimatedDocks, AllowNestedDocks, AllowTabbedDocks, ForceTabbedDocks, VerticalTabs }
-flags	DockOptions
-

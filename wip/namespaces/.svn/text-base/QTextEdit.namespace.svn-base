@@ -1,5 +1,0 @@
-
-class	ExtraSelection
-flags	AutoFormatting
-enum	AutoFormattingFlag { AutoNone, AutoBulletList, AutoAll }
-enum	LineWrapMode { NoWrap, WidgetWidth, FixedPixelWidth, FixedColumnWidth }

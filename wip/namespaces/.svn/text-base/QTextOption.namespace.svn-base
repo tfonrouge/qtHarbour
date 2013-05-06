@@ -1,6 +1,0 @@
-
-class	Tab
-enum	Flag { IncludeTrailingSpaces, ShowTabsAndSpaces, ShowLineAndParagraphSeparators, AddSpaceForLineAndParagraphSeparators, SuppressColors }
-flags	Flags
-enum	TabType { LeftTab, RightTab, CenterTab, DelimiterTab }
-enum	WrapMode { NoWrap, WordWrap, ManualWrap, WrapAnywhere, WrapAtWordBoundaryOrAnywhere }

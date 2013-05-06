@@ -1,5 +1,0 @@
-
-enum	ButtonLayout { WinLayout, MacLayout, KdeLayout, GnomeLayout }
-enum	ButtonRole { InvalidRole, AcceptRole, RejectRole, DestructiveRole, ..., ResetRole }
-enum	StandardButton { Ok, Open, Save, Cancel, ..., NoButton }
-flags	StandardButtons

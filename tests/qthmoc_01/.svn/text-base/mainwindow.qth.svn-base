@@ -1,9 +1,0 @@
-
-#include "qtHarbour.ch"
-
-CLASS MyMainWindow FROM QMainWindow
-    SLOT METHOD doSomething()
-ENDCLASS
-
-METHOD doSomething() CLASS MyMainWindow
-RETURN NIL

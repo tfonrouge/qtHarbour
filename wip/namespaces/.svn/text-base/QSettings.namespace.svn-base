@@ -1,7 +1,0 @@
-
-enum	Format { NativeFormat, IniFormat, InvalidFormat }
-typedef	ReadFunc
-enum	Scope { UserScope, SystemScope }
-typedef	SettingsMap
-enum	Status { NoError, AccessError, FormatError }
-typedef	WriteFunc

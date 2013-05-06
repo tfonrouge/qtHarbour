@@ -1,4 +1,0 @@
-
-enum	Shadow { Plain, Raised, Sunken }
-enum	Shape { NoFrame, Box, Panel, StyledPanel, ..., WinPanel }
-enum	StyleMask { Shadow_Mask, Shape_Mask }
