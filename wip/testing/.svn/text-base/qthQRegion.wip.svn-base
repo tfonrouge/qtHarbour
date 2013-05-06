@@ -1,0 +1,63 @@
+/*
+ * $Id: qthQRegion.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+CLASS QRegion FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QRegion ()
+QRegion ( int x, int y, int w, int h, RegionType t = Rectangle )
+QRegion ( const QPolygon & a, Qt::FillRule fillRule = Qt::OddEvenFill )
+QRegion ( const QRegion & r )
+QRegion ( const QBitmap & bm )
+QRegion ( const QRect & r, RegionType t = Rectangle )
+QRect  boundingRect () const
+bool  contains ( const QPoint & p ) const
+bool  contains ( const QRect & r ) const
+
+#if 0
+Handle  handle () const
+
+QRegion  intersected ( const QRegion & r ) const
+QRegion  intersected ( const QRect & rect ) const
+bool  intersects ( const QRegion & region ) const
+bool  intersects ( const QRect & rect ) const
+bool  isEmpty () const
+int  rectCount () const
+QVector<QRect>  rects () const
+void  setRects ( const QRect * rects, int number )
+QRegion  subtracted ( const QRegion & r ) const
+void  translate ( int dx, int dy )
+void  translate ( const QPoint & point )
+QRegion  translated ( int dx, int dy ) const
+QRegion  translated ( const QPoint & p ) const
+QRegion  united ( const QRegion & r ) const
+QRegion  united ( const QRect & rect ) const
+QRegion  xored ( const QRegion & r ) const
+//operator QVariant () const
+bool  operator!= ( const QRegion & other ) const
+const QRegion  operator& ( const QRegion & r ) const
+const QRegion  operator& ( const QRect & r ) const
+QRegion &  operator&= ( const QRegion & r )
+QRegion &  operator&= ( const QRect & r )
+const QRegion  operator+ ( const QRegion & r ) const
+const QRegion  operator+ ( const QRect & r ) const
+QRegion &  operator+= ( const QRegion & r )
+QRegion &  operator+= ( const QRect & rect )
+const QRegion  operator- ( const QRegion & r ) const
+QRegion &  operator-= ( const QRegion & r )
+QRegion &  operator= ( const QRegion & r )
+bool  operator== ( const QRegion & r ) const
+const QRegion  operator^ ( const QRegion & r ) const
+QRegion &  operator^= ( const QRegion & r )
+const QRegion  operator| ( const QRegion & r ) const
+QRegion &  operator|= ( const QRegion & r )

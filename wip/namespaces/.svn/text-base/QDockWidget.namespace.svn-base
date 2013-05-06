@@ -1,0 +1,3 @@
+
+enum	DockWidgetFeature { DockWidgetClosable, DockWidgetMovable, DockWidgetFloatable, DockWidgetVerticalTitleBar, AllDockWidgetFeatures, NoDockWidgetFeatures }
+flags	DockWidgetFeatures

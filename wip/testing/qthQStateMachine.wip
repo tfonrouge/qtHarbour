@@ -1,0 +1,54 @@
+/*
+ * $Id: qthQStateMachine.wip 128 2011-04-14 15:49:46Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname stateMachine
+
+CLASS QStateMachine FROM QState
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QStateMachine ( QObject * parent = 0 )
+~QStateMachine ()
+void  addDefaultAnimation ( QAbstractAnimation * animation )
+void  addState ( QAbstractState * state )
+bool  cancelDelayedEvent ( int id )
+void  clearError ()
+QSet<QAbstractState *>  configuration () const
+QList<QAbstractAnimation *>  defaultAnimations () const
+Error  error () const
+QString  errorString () const
+QStateMachine::RestorePolicy  globalRestorePolicy () const
+bool  isAnimated () const
+bool  isRunning () const
+int  postDelayedEvent ( QEvent * event, int delay )
+void  postEvent ( QEvent * event, EventPriority priority = NormalPriority )
+void  removeDefaultAnimation ( QAbstractAnimation * animation )
+void  removeState ( QAbstractState * state )
+void  setAnimated ( bool enabled )
+void  setGlobalRestorePolicy ( QStateMachine::RestorePolicy restorePolicy )
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  eventFilter ( QObject * watched, QEvent * event )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  start ()
+void  stop ()

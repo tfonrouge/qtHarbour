@@ -1,0 +1,97 @@
+/*
+ * $Id: qthQComboBox.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname comboBox
+
+CLASS QComboBox FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QComboBox ( QWidget * parent = 0 )
+~QComboBox ()
+void  addItem ( const QString & text, const QVariant & userData = QVariant() )
+void  addItem ( const QIcon & icon, const QString & text, const QVariant & userData = QVariant() )
+void  addItems ( const QStringList & texts )
+QCompleter *  completer () const
+int  count () const
+int  currentIndex () const
+QString  currentText () const
+bool  duplicatesEnabled () const
+int  findData ( const QVariant & data, int role = Qt::UserRole, Qt::MatchFlags flags = static_cast<Qt::MatchFlags> ( Qt::MatchExactly | Qt::MatchCaseSensitive ) ) const
+int  findText ( const QString & text, Qt::MatchFlags flags = static_cast<Qt::MatchFlags> ( Qt::MatchExactly | Qt::MatchCaseSensitive ) ) const
+bool  hasFrame () const
+virtual void  hidePopup ()
+QSize  iconSize () const
+void  insertItem ( int index, const QString & text, const QVariant & userData = QVariant() )
+void  insertItem ( int index, const QIcon & icon, const QString & text, const QVariant & userData = QVariant() )
+void  insertItems ( int index, const QStringList & list )
+InsertPolicy  insertPolicy () const
+void  insertSeparator ( int index )
+bool  isEditable () const
+QVariant  itemData ( int index, int role = Qt::UserRole ) const
+QAbstractItemDelegate *  itemDelegate () const
+QIcon  itemIcon ( int index ) const
+QString  itemText ( int index ) const
+QLineEdit *  lineEdit () const
+int  maxCount () const
+int  maxVisibleItems () const
+int  minimumContentsLength () const
+QAbstractItemModel *  model () const
+int  modelColumn () const
+void  removeItem ( int index )
+QModelIndex  rootModelIndex () const
+void  setCompleter ( QCompleter * completer )
+void  setDuplicatesEnabled ( bool enable )
+void  setEditable ( bool editable )
+void  setFrame ( bool )
+void  setIconSize ( const QSize & size )
+void  setInsertPolicy ( InsertPolicy policy )
+void  setItemData ( int index, const QVariant & value, int role = Qt::UserRole )
+void  setItemDelegate ( QAbstractItemDelegate * delegate )
+void  setItemIcon ( int index, const QIcon & icon )
+void  setItemText ( int index, const QString & text )
+void  setLineEdit ( QLineEdit * edit )
+void  setMaxCount ( int max )
+void  setMaxVisibleItems ( int maxItems )
+void  setMinimumContentsLength ( int characters )
+void  setModel ( QAbstractItemModel * model )
+void  setModelColumn ( int visibleColumn )
+void  setRootModelIndex ( const QModelIndex & index )
+void  setSizeAdjustPolicy ( SizeAdjustPolicy policy )
+void  setValidator ( const QValidator * validator )
+void  setView ( QAbstractItemView * itemView )
+virtual void  showPopup ()
+SizeAdjustPolicy  sizeAdjustPolicy () const
+const QValidator *  validator () const
+QAbstractItemView *  view () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  event ( QEvent * event )
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  clear ()
+void  clearEditText ()
+void  setCurrentIndex ( int index )
+void  setEditText ( const QString & text )

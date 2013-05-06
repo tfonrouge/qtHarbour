@@ -1,0 +1,27 @@
+/*
+ * $Id: qthQSpacerItem.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname spacerItem
+
+CLASS QSpacerItem FROM QLayoutItem
+// qthbegin
+Public Functions
+QSpacerItem ( int w, int h, QSizePolicy::Policy hPolicy = QSizePolicy::Minimum, QSizePolicy::Policy vPolicy = QSizePolicy::Minimum )
+void	changeSize ( int w, int h, QSizePolicy::Policy hPolicy = QSizePolicy::Minimum, QSizePolicy::Policy vPolicy = QSizePolicy::Minimum )
+
+Reimplemented Public Functions
+virtual Qt::Orientations	expandingDirections () const
+virtual QRect	geometry () const
+virtual bool	isEmpty () const
+virtual QSize	maximumSize () const
+virtual QSize	minimumSize () const
+virtual void	setGeometry ( const QRect & r )
+virtual QSize	sizeHint () const
+virtual QSpacerItem *	spacerItem ()
+
+// qthend

@@ -1,0 +1,9 @@
+
+enum	ActivationReason { Unknown, Context, DoubleClick, Trigger, MiddleClick }
+enum	MessageIcon { NoIcon, Information, Warning, Critical }
+{
+    QSystemTrayIcon::NoIcon	0	No icon is shown.
+    QSystemTrayIcon::Information	1	An information icon is shown.
+    QSystemTrayIcon::Warning	2	A standard warning icon is shown.
+    QSystemTrayIcon::Critical	3	A critical warning icon is shown.
+}

@@ -1,0 +1,39 @@
+/*
+ * $Id: qthQGestureEvent.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname gestureEvent
+
+CLASS QGestureEvent FROM QEvent
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QGestureEvent ( const QList<QGesture *> & gestures )
+~QGestureEvent ()
+void  accept ()
+void  accept ( QGesture * gesture )
+void  accept ( Qt::GestureType gestureType )
+QList<QGesture *>  activeGestures () const
+QList<QGesture *>  canceledGestures () const
+QGesture *  gesture ( Qt::GestureType type ) const
+QList<QGesture *>  gestures () const
+void  ignore ()
+void  ignore ( QGesture * gesture )
+void  ignore ( Qt::GestureType gestureType )
+bool  isAccepted () const
+bool  isAccepted ( QGesture * gesture ) const
+bool  isAccepted ( Qt::GestureType gestureType ) const
+QPointF  mapToGraphicsScene ( const QPointF & gesturePoint ) const
+void  setAccepted ( bool accepted )
+void  setAccepted ( QGesture * gesture, bool value )
+void  setAccepted ( Qt::GestureType gestureType, bool value )
+QWidget *  widget () const

@@ -1,0 +1,156 @@
+/*
+ * $Id: qthQVariant.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname variant
+
+CLASS QVariant FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QVariant ()
+QVariant ( const QLocale & l )
+QVariant ( const QRegExp & regExp )
+QVariant ( const QEasingCurve & val )
+QVariant ( int typeOrUserType, const void * copy )
+QVariant ( const QVariant & p )
+QVariant ( QDataStream & s )
+QVariant ( int val )
+QVariant ( uint val )
+QVariant ( qlonglong val )
+QVariant ( qulonglong val )
+QVariant ( bool val )
+QVariant ( double val )
+QVariant ( float val )
+// moved here to not create a QVariant( int ) from a Qt::GlobalColor enum
+QVariant ( Qt::GlobalColor color )
+// moved here to not create a QVariant( int ) from a Type
+QVariant ( Type type )
+QVariant ( const char * val )
+QVariant ( const QByteArray & val )
+QVariant ( const QBitArray & val )
+QVariant ( const QString & val )
+QVariant ( const QLatin1String & val )
+QVariant ( const QStringList & val )
+QVariant ( const QChar & c )
+QVariant ( const QDate & val )
+QVariant ( const QTime & val )
+QVariant ( const QDateTime & val )
+QVariant ( const QList<QVariant> & val )
+QVariant ( const QMap<QString, QVariant> & val )
+QVariant ( const QHash<QString, QVariant> & val )
+QVariant ( const QSize & val )
+QVariant ( const QSizeF & val )
+QVariant ( const QPoint & val )
+QVariant ( const QPointF & val )
+QVariant ( const QLine & val )
+QVariant ( const QLineF & val )
+QVariant ( const QRect & val )
+QVariant ( const QRectF & val )
+QVariant ( const QUrl & val )
+~QVariant ()
+bool  canConvert ( Type t ) const
+//bool  canConvert () const
+void  clear ()
+bool  convert ( Type t )
+bool  isNull () const
+bool  isValid () const
+
+void  setValue ( const T & value )
+#begindump
+PHB_ITEM pItem = hb_param( 1, HB_IT_ANY );
+
+switch( hb_itemType( pItem )  )
+{
+    case HB_IT_STRING:
+        p_variant->setValue<char>( hb_itemGetCPtr( pItem )[0] );
+        break;
+    case HB_IT_INTEGER:
+        p_variant->setValue<int>( hb_itemGetNI( pItem ) );
+        break;
+    case HB_IT_OBJECT:
+        if( hb_objGetClass( pItem ) == 0 )
+        {
+
+        }
+        else
+        {
+            PQTH_ITEM pqthItem = qth_itemListGet_PQTH_ITEM( pItem );
+            if(pqthItem)
+            {
+                switch (pqthItem->clsId) {
+                    case QtH::QSize :
+                        p_variant->setValue<QSize>( *(QSize*) pqthItem->cppObjectPtr );
+                        break;
+                    case QtH::QPoint :
+                        p_variant->setValue<QPoint>( *(QPoint*) pqthItem->cppObjectPtr );
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+    default:
+        qoutf("undefined variant type...");
+        qth_errRT_PARAM();
+        break;
+}
+#enddump
+QBitArray  toBitArray () const
+bool  toBool () const
+QByteArray  toByteArray () const
+QChar  toChar () const
+QDate  toDate () const
+QDateTime  toDateTime () const
+double  toDouble ( bool * ok = 0 ) const
+QEasingCurve  toEasingCurve () const
+float  toFloat ( bool * ok = 0 ) const
+QHash<QString, QVariant>  toHash () const
+int  toInt ( bool * ok = 0 ) const
+QLine  toLine () const
+QLineF  toLineF () const
+QList<QVariant>  toList () const
+QLocale  toLocale () const
+qlonglong  toLongLong ( bool * ok = 0 ) const
+QMap<QString, QVariant>  toMap () const
+QPoint  toPoint () const
+QPointF  toPointF () const
+qreal  toReal ( bool * ok = 0 ) const
+QRect  toRect () const
+QRectF  toRectF () const
+QRegExp  toRegExp () const
+QSize  toSize () const
+QSizeF  toSizeF () const
+QString  toString () const
+QStringList  toStringList () const
+QTime  toTime () const
+uint  toUInt ( bool * ok = 0 ) const
+qulonglong  toULongLong ( bool * ok = 0 ) const
+QUrl  toUrl () const
+Type  type () const
+const char *  typeName () const
+int  userType () const
+T  value () const
+bool  operator!= ( const QVariant & v ) const
+QVariant &  operator= ( const QVariant & variant )
+bool  operator== ( const QVariant & v ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QVariant  fromValue ( const T & value )
+#begindump
+#enddump
+Type  nameToType ( const char * name )
+const char *  typeToName ( Type typ )

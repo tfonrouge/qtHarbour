@@ -1,0 +1,77 @@
+#
+# $Id$
+#
+# * (C) 2012. qtHarbour     http://sourceforge.net/projects/qth/
+# * (C) 2012. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+# *
+#
+
+unix:OBJECTS_DIR = .obj/unix
+mac:OBJECTS_DIR = .obj/mac
+win32:OBJECTS_DIR = .obj/win32
+
+mac:HBOS += -d__MAC__
+unix:HBOS += -d__UNIX__
+win32:HBOS += -d__WIN32__
+
+mac:DEFINES += __MAC__
+unix:DEFINES += __UNIX__
+win32:DEFINES += __WIN32__
+
+HBMK2 = hbmk2
+QTHMOC = qthmoc
+
+INCLUDEPATH = include $$system("hbmk2 --hbdirinc")
+
+harbour.output = .tmp/${QMAKE_FILE_BASE}.c
+harbour.input = HBSOURCES
+harbour.variable_out = SOURCES
+harbour.name = Harbour
+harbour.commands = $$system("hbmk2 --hbdirbin")/harbour -w3 -es2 -gc2 $${HBOS} -Iinclude -I../../include -I$$system("hbmk2 --hbdirinc") ${QMAKE_FILE_IN} -o.tmp/${QMAKE_FILE_BASE}.c
+
+QMAKE_EXTRA_COMPILERS += harbour
+
+wip.output = .tmp/${QMAKE_FILE_BASE}.cpp
+wip.input = WIPSOURCES
+wip.variable_out = SOURCES
+wip.name = Wip
+wip.commands = bin/wip -g wip/${QMAKE_FILE_BASE}.wip .tmp/${QMAKE_FILE_BASE}.cpp
+
+QMAKE_EXTRA_COMPILERS += wip
+
+qthmoc.output = .qth/${QMAKE_FILE_BASE}.*
+qthmoc.input = QTHSOURCES
+qthmoc.variable_out = SOURCES
+qthmoc.name = qtH MOC Generates C++ code from .qth files
+qthmoc.commands = bin/qthmoc ${QMAKE_FILE_IN} .qth/${QMAKE_FILE_BASE}.cpp .qth/${QMAKE_FILE_BASE}.moc
+
+QMAKE_EXTRA_COMPILERS += qthmoc
+
+# binary wip to generate sources
+unix:qthwipgen.target = bin/wip
+win32:qthwipgen.target = bin/wip.exe
+qthwipgen.commands = hbmk2 WipGen/wip.hbp
+
+QMAKE_EXTRA_TARGETS += qthwipgen
+QMAKE_CLEAN += $$qthwipgen.target
+
+PRE_TARGETDEPS += $$qthwipgen.target
+
+# binary qthmoc to generate sources
+unix:qthmocgen.target = bin/qthmoc
+win32:qthmocgen.target = bin/qthmoc.exe
+qthmocgen.commands = hbmk2 qthmoc/qthmoc.hbp
+
+QMAKE_EXTRA_TARGETS += qthmocgen
+QMAKE_CLEAN += $$qthmocgen.target
+
+PRE_TARGETDEPS += $$qthmocgen.target
+
+# include's files needed & defined to compile library
+qthtarget_inc.target = .tmp/qth_clsTypes.inc
+qthtarget_inc.commands = bin/wip --initialize
+
+QMAKE_EXTRA_TARGETS += qthtarget_inc
+QMAKE_CLEAN += $$qthtarget_inc.target
+
+PRE_TARGETDEPS += $$qthtarget_inc.target

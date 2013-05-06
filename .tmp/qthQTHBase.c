@@ -1,0 +1,364 @@
+/*
+ * Harbour 3.2.0dev (Rev. 18754)
+ * LLVM/GNU C 4.2.1 (64-bit)
+ * Generated C source from "src/base/qthQTHBase.prg"
+ */
+
+#include "hbvmpub.h"
+#include "hbpcode.h"
+#include "hbinit.h"
+
+
+HB_FUNC( QTHQTHBASE );
+HB_FUNC( QTHBASE );
+HB_FUNC_EXTERN( __CLSLOCKDEF );
+HB_FUNC_EXTERN( HBCLASS );
+HB_FUNC_EXTERN( HBOBJECT );
+HB_FUNC_STATIC( QTHBASE_SETENUM );
+HB_FUNC_STATIC( QTHBASE_ONDESTRUCT );
+HB_FUNC_EXTERN( QTHBASE_COBJECTPTR );
+HB_FUNC_EXTERN( __CLSUNLOCKDEF );
+HB_FUNC_EXTERN( __OBJHASMSG );
+HB_FUNC_EXTERN( QTH_BASEDESTRUCT );
+HB_FUNC_EXTERN( QOUT );
+HB_FUNC_EXTERN( QQOUT );
+HB_FUNC_INITSTATICS();
+
+
+HB_INIT_SYMBOLS_BEGIN( hb_vm_SymbolInit_QTHQTHBASE )
+{ "QTHQTHBASE", {HB_FS_PUBLIC | HB_FS_FIRST | HB_FS_LOCAL}, {HB_FUNCNAME( QTHQTHBASE )}, NULL },
+{ "QTHBASE", {HB_FS_PUBLIC | HB_FS_LOCAL}, {HB_FUNCNAME( QTHBASE )}, NULL },
+{ "__CLSLOCKDEF", {HB_FS_PUBLIC}, {HB_FUNCNAME( __CLSLOCKDEF )}, NULL },
+{ "NEW", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "HBCLASS", {HB_FS_PUBLIC}, {HB_FUNCNAME( HBCLASS )}, NULL },
+{ "HBOBJECT", {HB_FS_PUBLIC}, {HB_FUNCNAME( HBOBJECT )}, NULL },
+{ "ADDMULTIDATA", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "ADDMETHOD", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "QTHBASE_SETENUM", {HB_FS_STATIC | HB_FS_LOCAL}, {HB_FUNCNAME( QTHBASE_SETENUM )}, NULL },
+{ "SETDESTRUCTOR", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "QTHBASE_ONDESTRUCT", {HB_FS_STATIC | HB_FS_LOCAL}, {HB_FUNCNAME( QTHBASE_ONDESTRUCT )}, NULL },
+{ "ADDINLINE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "E_ENUMNAME", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "E_ENUMTYPE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "E_ENUMVALUE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "QTHBASE_COBJECTPTR", {HB_FS_PUBLIC}, {HB_FUNCNAME( QTHBASE_COBJECTPTR )}, NULL },
+{ "CREATE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "__CLSUNLOCKDEF", {HB_FS_PUBLIC}, {HB_FUNCNAME( __CLSUNLOCKDEF )}, NULL },
+{ "INSTANCE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "__OBJHASMSG", {HB_FS_PUBLIC}, {HB_FUNCNAME( __OBJHASMSG )}, NULL },
+{ "INITCLASS", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "QTH_BASEDESTRUCT", {HB_FS_PUBLIC}, {HB_FUNCNAME( QTH_BASEDESTRUCT )}, NULL },
+{ "_E_ENUMTYPE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "_E_ENUMNAME", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "_E_ENUMVALUE", {HB_FS_PUBLIC | HB_FS_MESSAGE}, {NULL}, NULL },
+{ "QOUT", {HB_FS_PUBLIC}, {HB_FUNCNAME( QOUT )}, NULL },
+{ "QQOUT", {HB_FS_PUBLIC}, {HB_FUNCNAME( QQOUT )}, NULL },
+{ "(_INITSTATICS00001)", {HB_FS_INITEXIT | HB_FS_LOCAL}, {hb_INITSTATICS}, NULL }
+HB_INIT_SYMBOLS_EX_END( hb_vm_SymbolInit_QTHQTHBASE, "src/base/qthQTHBase.prg", 0x0, 0x0003 )
+
+#if defined( HB_PRAGMA_STARTUP )
+   #pragma startup hb_vm_SymbolInit_QTHQTHBASE
+#elif defined( HB_DATASEG_STARTUP )
+   #define HB_DATASEG_BODY    HB_DATASEG_FUNC( hb_vm_SymbolInit_QTHQTHBASE )
+   #include "hbiniseg.h"
+#endif
+
+HB_FUNC( QTHQTHBASE )
+{
+   static const HB_BYTE pcode[] =
+   {
+	HB_P_ENDPROC
+/* 00001 */
+   };
+
+   hb_vmExecute( pcode, symbols );
+}
+
+HB_FUNC( QTHBASE )
+{
+   static const HB_BYTE pcode[] =
+   {
+	HB_P_VFRAME, 3, 0,	/* locals, params */
+	HB_P_SFRAME, 27, 0,	/* symbol (_INITSTATICS) */
+/* 00006 */ HB_P_LINE, 14, 0,	/* 14 */
+	HB_P_PUSHSTATIC, 1, 0,	/* S_OCLASS */
+	HB_P_PUSHNIL,
+	HB_P_EXACTLYEQUAL,
+	HB_P_JUMPFALSE, 221, 1,	/* 477 (abs: 00491) */
+	HB_P_PUSHFUNCSYM, 2, 0,	/* __CLSLOCKDEF */
+	HB_P_PUSHSTATICREF, 1, 0,	/* S_OCLASS */
+	HB_P_FUNCTIONSHORT, 1,
+	HB_P_JUMPFALSE, 210, 1,	/* 466 (abs: 00491) */
+	HB_P_SEQALWAYS, 148, 1, 0,	/* 404 (abs: 00000432) */
+	HB_P_ONE,
+	HB_P_POPLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_MESSAGE, 3, 0,	/* NEW */
+	HB_P_PUSHFUNCSYM, 4, 0,	/* HBCLASS */
+	HB_P_FUNCTIONSHORT, 0,
+	HB_P_PUSHSTRSHORT, 8,	/* 8 */
+	'Q', 'T', 'H', 'B', 'A', 'S', 'E', 0, 
+	HB_P_PUSHSYMNEAR, 5,	/* HBOBJECT */
+	HB_P_ARRAYGEN, 1, 0,	/* 1 */
+	HB_P_PUSHSYMNEAR, 1,	/* QTHBASE */
+	HB_P_SENDSHORT, 3,
+	HB_P_POPLOCALNEAR, 2,	/* OCLASS */
+/* 00064 */ HB_P_LINE, 15, 0,	/* 15 */
+	HB_P_MESSAGE, 6, 0,	/* ADDMULTIDATA */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHNIL,
+	HB_P_PUSHNIL,
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_PUSHSTRSHORT, 11,	/* 11 */
+	'e', '_', 'e', 'n', 'u', 'm', 'N', 'a', 'm', 'e', 0, 
+	HB_P_ARRAYGEN, 1, 0,	/* 1 */
+	HB_P_FALSE,
+	HB_P_SENDSHORT, 5,
+	HB_P_POP,
+/* 00102 */ HB_P_LINE, 16, 0,	/* 16 */
+	HB_P_MESSAGE, 6, 0,	/* ADDMULTIDATA */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHNIL,
+	HB_P_PUSHNIL,
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_PUSHSTRSHORT, 11,	/* 11 */
+	'e', '_', 'e', 'n', 'u', 'm', 'T', 'y', 'p', 'e', 0, 
+	HB_P_ARRAYGEN, 1, 0,	/* 1 */
+	HB_P_FALSE,
+	HB_P_SENDSHORT, 5,
+	HB_P_POP,
+/* 00140 */ HB_P_LINE, 17, 0,	/* 17 */
+	HB_P_MESSAGE, 6, 0,	/* ADDMULTIDATA */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHNIL,
+	HB_P_PUSHNIL,
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_PUSHSTRSHORT, 12,	/* 12 */
+	'e', '_', 'e', 'n', 'u', 'm', 'V', 'a', 'l', 'u', 'e', 0, 
+	HB_P_ARRAYGEN, 1, 0,	/* 1 */
+	HB_P_FALSE,
+	HB_P_SENDSHORT, 5,
+	HB_P_POP,
+/* 00179 */ HB_P_LINE, 18, 0,	/* 18 */
+	HB_P_PUSHBYTE, 2,	/* 2 */
+	HB_P_POPLOCALNEAR, 1,	/* NSCOPE */
+/* 00186 */ HB_P_LINE, 19, 0,	/* 19 */
+	HB_P_MESSAGE, 7, 0,	/* ADDMETHOD */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHSTRSHORT, 8,	/* 8 */
+	'S', 'e', 't', 'E', 'n', 'u', 'm', 0, 
+	HB_P_PUSHSYMNEAR, 8,	/* QTHBASE_SETENUM */
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_SENDSHORT, 3,
+	HB_P_POP,
+/* 00217 */ HB_P_LINE, 20, 0,	/* 20 */
+	HB_P_ONE,
+	HB_P_POPLOCALNEAR, 1,	/* NSCOPE */
+/* 00223 */ HB_P_LINE, 22, 0,	/* 22 */
+	HB_P_MESSAGE, 9, 0,	/* SETDESTRUCTOR */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHSYMNEAR, 10,	/* QTHBASE_ONDESTRUCT */
+	HB_P_SENDSHORT, 1,
+	HB_P_POP,
+/* 00236 */ HB_P_LINE, 23, 0,	/* 23 */
+	HB_P_MESSAGE, 11, 0,	/* ADDINLINE */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHSTRSHORT, 14,	/* 14 */
+	'E', '_', 'G', 'e', 't', 'E', 'n', 'u', 'm', 'N', 'a', 'm', 'e', 0, 
+	HB_P_PUSHBLOCK, 15, 0,	/* 15 */
+	1, 0,	/* number of local parameters (1) */
+	0, 0,	/* number of local variables (0) */
+	HB_P_MESSAGE, 12, 0,	/* E_ENUMNAME */
+	HB_P_PUSHLOCALNEAR, 1,	/* codeblockvar1 */
+	HB_P_SENDSHORT, 0,
+	HB_P_ENDBLOCK,
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_SENDSHORT, 3,
+	HB_P_POP,
+/* 00286 */ HB_P_LINE, 24, 0,	/* 24 */
+	HB_P_MESSAGE, 11, 0,	/* ADDINLINE */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHSTRSHORT, 14,	/* 14 */
+	'E', '_', 'G', 'e', 't', 'E', 'n', 'u', 'm', 'T', 'y', 'p', 'e', 0, 
+	HB_P_PUSHBLOCK, 15, 0,	/* 15 */
+	1, 0,	/* number of local parameters (1) */
+	0, 0,	/* number of local variables (0) */
+	HB_P_MESSAGE, 13, 0,	/* E_ENUMTYPE */
+	HB_P_PUSHLOCALNEAR, 1,	/* codeblockvar1 */
+	HB_P_SENDSHORT, 0,
+	HB_P_ENDBLOCK,
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_SENDSHORT, 3,
+	HB_P_POP,
+/* 00336 */ HB_P_LINE, 25, 0,	/* 25 */
+	HB_P_MESSAGE, 11, 0,	/* ADDINLINE */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHSTRSHORT, 15,	/* 15 */
+	'E', '_', 'G', 'e', 't', 'E', 'n', 'u', 'm', 'V', 'a', 'l', 'u', 'e', 0, 
+	HB_P_PUSHBLOCK, 15, 0,	/* 15 */
+	1, 0,	/* number of local parameters (1) */
+	0, 0,	/* number of local variables (0) */
+	HB_P_MESSAGE, 14, 0,	/* E_ENUMVALUE */
+	HB_P_PUSHLOCALNEAR, 1,	/* codeblockvar1 */
+	HB_P_SENDSHORT, 0,
+	HB_P_ENDBLOCK,
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_SENDSHORT, 3,
+	HB_P_POP,
+/* 00387 */ HB_P_LINE, 26, 0,	/* 26 */
+	HB_P_MESSAGE, 7, 0,	/* ADDMETHOD */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_PUSHSTRSHORT, 11,	/* 11 */
+	'C', 'O', 'b', 'j', 'e', 'c', 't', 'P', 't', 'r', 0, 
+	HB_P_PUSHSYMNEAR, 15,	/* QTHBASE_COBJECTPTR */
+	HB_P_PUSHLOCALNEAR, 1,	/* NSCOPE */
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_ZERO,
+	HB_P_PLUS,
+	HB_P_SENDSHORT, 3,
+	HB_P_POP,
+/* 00421 */ HB_P_LINE, 27, 0,	/* 27 */
+	HB_P_MESSAGE, 16, 0,	/* CREATE */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_SENDSHORT, 0,
+	HB_P_POP,
+/* 00432 */ HB_P_ALWAYSBEGIN, 14, 0, 0,	/* 14 (abs: 00000446) */
+	HB_P_PUSHFUNCSYM, 17, 0,	/* __CLSUNLOCKDEF */
+	HB_P_PUSHSTATICREF, 1, 0,	/* S_OCLASS */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_DOSHORT, 2,
+/* 00446 */ HB_P_ALWAYSEND,
+	HB_P_MESSAGE, 18, 0,	/* INSTANCE */
+	HB_P_PUSHLOCALNEAR, 2,	/* OCLASS */
+	HB_P_SENDSHORT, 0,
+	HB_P_POPLOCALNEAR, 3,	/* OINSTANCE */
+	HB_P_PUSHFUNCSYM, 19, 0,	/* __OBJHASMSG */
+	HB_P_PUSHLOCALNEAR, 3,	/* OINSTANCE */
+	HB_P_PUSHSTRSHORT, 10,	/* 10 */
+	'I', 'n', 'i', 't', 'C', 'l', 'a', 's', 's', 0, 
+	HB_P_FUNCTIONSHORT, 2,
+	HB_P_JUMPFALSENEAR, 12,	/* 12 (abs: 00487) */
+	HB_P_MESSAGE, 20, 0,	/* INITCLASS */
+	HB_P_PUSHLOCALNEAR, 3,	/* OINSTANCE */
+	HB_P_PUSHVPARAMS,
+	HB_P_MACROSEND, 1, 0,
+	HB_P_POP,
+	HB_P_PUSHLOCALNEAR, 3,	/* OINSTANCE */
+	HB_P_RETVALUE,
+	HB_P_ENDPROC,
+	HB_P_MESSAGE, 18, 0,	/* INSTANCE */
+	HB_P_PUSHSTATIC, 1, 0,	/* S_OCLASS */
+	HB_P_SENDSHORT, 0,
+	HB_P_RETVALUE,
+	HB_P_ENDPROC
+/* 00501 */
+   };
+
+   hb_vmExecute( pcode, symbols );
+}
+
+HB_FUNC_STATIC( QTHBASE_ONDESTRUCT )
+{
+   static const HB_BYTE pcode[] =
+   {
+/* 00000 */ HB_P_LINE, 33, 0,	/* 33 */
+	HB_P_PUSHFUNCSYM, 21, 0,	/* QTH_BASEDESTRUCT */
+	HB_P_PUSHSELF,
+	HB_P_DOSHORT, 1,
+/* 00009 */ HB_P_LINE, 34, 0,	/* 34 */
+	HB_P_ENDPROC
+/* 00013 */
+   };
+
+   hb_vmExecute( pcode, symbols );
+}
+
+HB_FUNC_STATIC( QTHBASE_SETENUM )
+{
+   static const HB_BYTE pcode[] =
+   {
+	HB_P_FRAME, 0, 3,	/* locals, params */
+/* 00003 */ HB_P_LINE, 37, 0,	/* 37 */
+	HB_P_MESSAGE, 22, 0,	/* _E_ENUMTYPE */
+	HB_P_PUSHSELF,
+	HB_P_PUSHLOCALNEAR, 1,	/* TYPE */
+	HB_P_SENDSHORT, 1,
+	HB_P_POP,
+/* 00015 */ HB_P_LINE, 38, 0,	/* 38 */
+	HB_P_MESSAGE, 23, 0,	/* _E_ENUMNAME */
+	HB_P_PUSHSELF,
+	HB_P_PUSHLOCALNEAR, 2,	/* NAME */
+	HB_P_SENDSHORT, 1,
+	HB_P_POP,
+/* 00027 */ HB_P_LINE, 39, 0,	/* 39 */
+	HB_P_MESSAGE, 24, 0,	/* _E_ENUMVALUE */
+	HB_P_PUSHSELF,
+	HB_P_PUSHLOCALNEAR, 3,	/* VALUE */
+	HB_P_SENDSHORT, 1,
+	HB_P_POP,
+/* 00039 */ HB_P_LINE, 40, 0,	/* 40 */
+	HB_P_PUSHSELF,
+	HB_P_RETVALUE,
+	HB_P_ENDPROC
+/* 00045 */
+   };
+
+   hb_vmExecute( pcode, symbols );
+}
+
+HB_FUNC_INITSTATICS()
+{
+   static const HB_BYTE pcode[] =
+   {
+	HB_P_STATICS, 27, 0, 1, 0,	/* symbol (_INITSTATICS), 1 statics */
+	HB_P_ENDPROC
+/* 00006 */
+   };
+
+   hb_vmExecute( pcode, symbols );
+}
+

@@ -1,0 +1,18 @@
+
+enum	FormattingOption { None, RemoveScheme, RemovePassword, RemoveUserInfo, ..., StripTrailingSlash }
+{
+    QUrl::None	0x0	The format of the URL is unchanged.
+    QUrl::RemoveScheme	0x1	The scheme is removed from the URL.
+    QUrl::RemovePassword	0x2	Any password in the URL is removed.
+    QUrl::RemoveUserInfo	RemovePassword | 0x4	Any user information in the URL is removed.
+    QUrl::RemovePort	0x8	Any specified port is removed from the URL.
+    QUrl::RemoveAuthority	RemoveUserInfo | RemovePort | 0x10	 
+    QUrl::RemovePath	0x20	The URL's path is removed, leaving only the scheme, host address, and port (if present).
+    QUrl::RemoveQuery	0x40	The query part of the URL (following a '?' character) is removed.
+    QUrl::RemoveFragment	0x80	 
+    QUrl::StripTrailingSlash	0x10000	The trailing slash is removed if one is present.
+}
+
+flags	FormattingOptions
+enum	ParsingMode { TolerantMode, StrictMode }
+

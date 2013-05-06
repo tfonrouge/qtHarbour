@@ -1,0 +1,52 @@
+/*
+ * $Id: qthQStackedLayout.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname stackedLayout
+
+CLASS QStackedLayout FROM QLayout
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QStackedLayout ()
+QStackedLayout ( QWidget * parent )
+QStackedLayout ( QLayout * parentLayout )
+~QStackedLayout ()
+int  addWidget ( QWidget * widget )
+int  currentIndex () const
+QWidget *  currentWidget () const
+int  insertWidget ( int index, QWidget * widget )
+void  setStackingMode ( StackingMode stackingMode )
+StackingMode  stackingMode () const
+QWidget *  widget ( int index ) const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  addItem ( QLayoutItem * item )
+virtual int  count () const
+virtual QLayoutItem *  itemAt ( int index ) const
+virtual QSize  minimumSize () const
+virtual void  setGeometry ( const QRect & rect )
+virtual QSize  sizeHint () const
+virtual QLayoutItem *  takeAt ( int index )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  setCurrentIndex ( int index )
+void  setCurrentWidget ( QWidget * widget )

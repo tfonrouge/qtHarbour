@@ -1,0 +1,8 @@
+
+enum	RenderFlag { DrawWindowBackground, DrawChildren, IgnoreMask }
+flags	RenderFlags
+{
+    QWidget::DrawWindowBackground	0x1	If you enable this option, the widget's background is rendered into the target even if autoFillBackground is not set. By default, this option is enabled.
+    QWidget::DrawChildren	0x2	If you enable this option, the widget's children are rendered recursively into the target. By default, this option is enabled.
+    QWidget::IgnoreMask	0x4	If you enable this option, the widget's QWidget::mask() is ignored when rendering into the target. By default, this option is disabled.
+}

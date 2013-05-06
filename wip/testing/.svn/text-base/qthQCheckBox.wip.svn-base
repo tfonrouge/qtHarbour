@@ -1,0 +1,33 @@
+/*
+ * $Id: qthQCheckBox.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname checkBox
+
+CLASS QCheckBox FROM QAbstractButton
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QCheckBox ( QWidget * parent = 0 )
+QCheckBox ( const QString & text, QWidget * parent = 0 )
+Qt::CheckState  checkState () const
+bool  isTristate () const
+void  setCheckState ( Qt::CheckState state )
+void  setTristate ( bool y = true )
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QSize  sizeHint () const

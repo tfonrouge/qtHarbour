@@ -1,0 +1,54 @@
+/*
+ * $Id: qthQCursor.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname cursor
+
+CLASS QCursor FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QCursor ()
+QCursor ( Qt::CursorShape shape )
+QCursor ( const QBitmap & bitmap, const QBitmap & mask, int hotX = -1, int hotY = -1 )
+QCursor ( const QPixmap & pixmap, int hotX = -1, int hotY = -1 )
+QCursor ( const QCursor & c )
+
+#if __WIN32__no
+QCursor ( HCURSOR cursor )
+
+#if X11
+QCursor ( Qt::HANDLE handle )
+
+~QCursor ()
+const QBitmap *  bitmap () const
+
+#if 0
+HCURSOR_or_HANDLE  handle () const
+
+QPoint  hotSpot () const
+const QBitmap *  mask () const
+QPixmap  pixmap () const
+void  setShape ( Qt::CursorShape shape )
+Qt::CursorShape  shape () const
+//operator QVariant () const
+QCursor &  operator= ( const QCursor & c )
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QPoint  pos ()
+void  setPos ( int x, int y )
+void  setPos ( const QPoint & p )

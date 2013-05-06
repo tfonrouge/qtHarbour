@@ -1,0 +1,43 @@
+/*
+ * $Id: qthQColumnView.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QAbstractItemView INHERITED
+
+#varname columnView
+
+CLASS QColumnView FROM QAbstractItemView
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QColumnView ( QWidget * parent = 0 )
+~QColumnView ()
+QList<int>  columnWidths () const
+QWidget *  previewWidget () const
+bool  resizeGripsVisible () const
+void  setColumnWidths ( const QList<int> & list )
+void  setPreviewWidget ( QWidget * widget )
+void  setResizeGripsVisible ( bool visible )
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QModelIndex  indexAt ( const QPoint & point ) const
+virtual void  scrollTo ( const QModelIndex & index, ScrollHint hint = EnsureVisible )
+virtual void  selectAll ()
+virtual void  setModel ( QAbstractItemModel * model )
+virtual void  setRootIndex ( const QModelIndex & index )
+virtual void  setSelectionModel ( QItemSelectionModel * newSelectionModel )
+virtual QSize  sizeHint () const
+virtual QRect  visualRect ( const QModelIndex & index ) const

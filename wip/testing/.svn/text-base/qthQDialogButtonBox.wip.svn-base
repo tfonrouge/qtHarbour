@@ -1,0 +1,38 @@
+/*
+ * $Id: qthQDialogButtonBox.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname dialogButtonBox
+
+CLASS QDialogButtonBox FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QDialogButtonBox ( QWidget * parent = 0 )
+QDialogButtonBox ( Qt::Orientation orientation, QWidget * parent = 0 )
+QDialogButtonBox ( StandardButtons buttons, Qt::Orientation orientation = Qt::Horizontal, QWidget * parent = 0 )
+~QDialogButtonBox ()
+void  addButton ( QAbstractButton * button, ButtonRole role )
+QPushButton *  addButton ( const QString & text, ButtonRole role )
+QPushButton *  addButton ( StandardButton button )
+QPushButton *  button ( StandardButton which ) const
+ButtonRole  buttonRole ( QAbstractButton * button ) const
+QList<QAbstractButton *>  buttons () const
+bool  centerButtons () const
+void  clear ()
+Qt::Orientation  orientation () const
+void  removeButton ( QAbstractButton * button )
+void  setCenterButtons ( bool center )
+void  setOrientation ( Qt::Orientation orientation )
+void  setStandardButtons ( StandardButtons buttons )
+StandardButton  standardButton ( QAbstractButton * button ) const
+StandardButtons  standardButtons () const

@@ -1,0 +1,21 @@
+/*
+ * $Id: qthQHBoxLayout.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname hBoxLayout
+
+CLASS QHBoxLayout FROM QBoxLayout
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QHBoxLayout ()
+QHBoxLayout ( QWidget * parent )
+~QHBoxLayout ()

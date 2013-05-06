@@ -1,0 +1,50 @@
+/*
+ * $Id: qthQMdiSubWindow.wip 130 2011-04-20 15:54:25Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname mdiSubWindow
+
+CLASS QMdiSubWindow FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QMdiSubWindow ( QWidget * parent = 0, Qt::WindowFlags flags = 0 )
+~QMdiSubWindow ()
+bool  isShaded () const
+int  keyboardPageStep () const
+int  keyboardSingleStep () const
+QMdiArea *  mdiArea () const
+void  setKeyboardPageStep ( int step )
+void  setKeyboardSingleStep ( int step )
+void  setOption ( SubWindowOption option, bool on = true )
+void  setSystemMenu ( QMenu * systemMenu )
+void  setWidget ( QWidget * widget )
+QMenu *  systemMenu () const
+bool  testOption ( SubWindowOption option ) const
+QWidget *  widget () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  showShaded ()
+void  showSystemMenu ()

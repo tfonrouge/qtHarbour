@@ -1,0 +1,24 @@
+/*
+ * $Id: qthQFocusEvent.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QEvent INHERITED
+
+#varname focusEvent
+
+CLASS QFocusEvent FROM QEvent
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QFocusEvent ( Type type, Qt::FocusReason reason = Qt::OtherFocusReason )
+bool  gotFocus () const
+bool  lostFocus () const
+Qt::FocusReason  reason () const

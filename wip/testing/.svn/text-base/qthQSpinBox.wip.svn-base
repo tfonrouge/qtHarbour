@@ -1,0 +1,40 @@
+/*
+ * $Id: qthQSpinBox.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname spinBox
+
+CLASS QSpinBox FROM QAbstractSpinBox
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QSpinBox ( QWidget * parent = 0 )
+QString  cleanText () const
+int  maximum () const
+int  minimum () const
+QString  prefix () const
+void  setMaximum ( int max )
+void  setMinimum ( int min )
+void  setPrefix ( const QString & prefix )
+void  setRange ( int minimum, int maximum )
+void  setSingleStep ( int val )
+void  setSuffix ( const QString & suffix )
+int  singleStep () const
+QString  suffix () const
+int  value () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  setValue ( int val )

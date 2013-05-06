@@ -1,0 +1,11 @@
+
+enum	ItemIndexMethod { BspTreeIndex, NoIndex }
+enum	SceneLayer { ItemLayer, BackgroundLayer, ForegroundLayer, AllLayers }
+{
+    QGraphicsScene::ItemLayer	0x1	The item layer. QGraphicsScene renders all items are in this layer by calling the virtual function drawItems(). The item layer is drawn after the background layer, but before the foreground layer.
+    QGraphicsScene::BackgroundLayer	0x2	The background layer. QGraphicsScene renders the scene's background in this layer by calling the virtual function drawBackground(). The background layer is drawn first of all layers.
+    QGraphicsScene::ForegroundLayer	0x4	The foreground layer. QGraphicsScene renders the scene's foreground in this layer by calling the virtual function drawForeground(). The foreground layer is drawn last of all layers.
+    QGraphicsScene::AllLayers	0xffff	All layers; this value represents a combination of all three layers.
+}
+flags	SceneLayers
+

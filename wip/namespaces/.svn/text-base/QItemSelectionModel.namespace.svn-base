@@ -1,0 +1,3 @@
+
+enum	SelectionFlag { NoUpdate, Clear, Select, Deselect, ..., ClearAndSelect }
+flags	SelectionFlags

@@ -1,0 +1,6 @@
+
+enum  CacheMode { NoCache, ItemCoordinateCache, DeviceCoordinateCache }
+enum  GraphicsItemChange { ItemEnabledChange, ItemEnabledHasChanged, ItemMatrixChange, ItemPositionChange, ..., ItemScenePositionHasChanged }
+enum  GraphicsItemFlag { ItemIsMovable, ItemIsSelectable, ItemIsFocusable, ItemClipsToShape, ..., ItemSendsScenePositionChanges }
+flags  GraphicsItemFlags
+enum  PanelModality { NonModal, PanelModal, SceneModal }

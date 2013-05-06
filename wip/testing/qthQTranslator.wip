@@ -1,0 +1,22 @@
+/*
+ * $Id: qthQTranslator.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname translator
+
+CLASS QTranslator FROM QObject
+// qthbegin
+Public Functions
+QTranslator ( QObject * parent = 0 )
+~QTranslator ()
+virtual bool	isEmpty () const
+bool	load ( const QString & filename, const QString & directory = QString(), const QString & search_delimiters = QString(), const QString & suffix = QString() )
+bool	load ( const uchar * data, int len )
+virtual QString	translate ( const char * context, const char * sourceText, const char * disambiguation = 0 ) const
+QString	translate ( const char * context, const char * sourceText, const char * disambiguation, int n ) const
+
+// qthend

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/qth/!svn/ver/134/trunk/tests/qthmoc_02
+END
+test1.prg
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/qth/!svn/ver/134/trunk/tests/qthmoc_02/test1.prg
+END
+qthmoc_test1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/134/trunk/tests/qthmoc_02/qthmoc_test1.cpp
+END

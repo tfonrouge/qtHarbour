@@ -1,0 +1,50 @@
+/*
+ * $Id: qthQKeySequence.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QKeySequence
+
+#varname keySequence
+
+CLASS QKeySequence FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QKeySequence ()
+QKeySequence ( const QString & key )
+QKeySequence ( const QString & key, SequenceFormat format )
+QKeySequence ( int k1, int k2 = 0, int k3 = 0, int k4 = 0 )
+QKeySequence ( const QKeySequence & keysequence )
+QKeySequence ( StandardKey key )
+~QKeySequence ()
+uint  count () const
+bool  isEmpty () const
+SequenceMatch  matches ( const QKeySequence & seq ) const
+QString  toString ( SequenceFormat format = PortableText ) const
+//operator QVariant () const
+bool  operator!= ( const QKeySequence & other ) const
+bool  operator< ( const QKeySequence & other ) const
+bool  operator<= ( const QKeySequence & other ) const
+QKeySequence &  operator= ( const QKeySequence & other )
+bool  operator== ( const QKeySequence & other ) const
+bool  operator> ( const QKeySequence & other ) const
+bool  operator>= ( const QKeySequence & other ) const
+int  operator[] ( uint index ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QKeySequence  fromString ( const QString & str, SequenceFormat format = PortableText )
+QList<QKeySequence>  keyBindings ( StandardKey key )
+QKeySequence  mnemonic ( const QString & text )

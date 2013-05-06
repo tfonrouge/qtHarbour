@@ -1,0 +1,98 @@
+/*
+ * $Id: qthQFont.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname font
+
+CLASS QFont FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QFont ()
+QFont ( const QString & family, int pointSize = -1, int weight = -1, bool italic = false )
+QFont ( const QFont & font, QPaintDevice * pd )
+QFont ( const QFont & font )
+~QFont ()
+bool  bold () const
+Capitalization  capitalization () const
+QString  defaultFamily () const
+bool  exactMatch () const
+QString  family () const
+bool  fixedPitch () const
+#if IMPLEMENTED
+FT_Face  freetypeFace () const
+bool  fromString ( const QString & descrip )
+#if IMPLEMENTED
+HFONT  handle () const
+bool  isCopyOf ( const QFont & f ) const
+bool  italic () const
+bool  kerning () const
+QString  key () const
+QString  lastResortFamily () const
+QString  lastResortFont () const
+qreal  letterSpacing () const
+SpacingType  letterSpacingType () const
+quint32  macFontID () const
+bool  overline () const
+int  pixelSize () const
+int  pointSize () const
+qreal  pointSizeF () const
+bool  rawMode () const
+QString  rawName () const
+QFont  resolve ( const QFont & other ) const
+void  setBold ( bool enable )
+void  setCapitalization ( Capitalization caps )
+void  setFamily ( const QString & family )
+void  setFixedPitch ( bool enable )
+void  setItalic ( bool enable )
+void  setKerning ( bool enable )
+void  setLetterSpacing ( SpacingType type, qreal spacing )
+void  setOverline ( bool enable )
+void  setPixelSize ( int pixelSize )
+void  setPointSize ( int pointSize )
+void  setPointSizeF ( qreal pointSize )
+void  setRawMode ( bool enable )
+void  setRawName ( const QString & name )
+void  setStretch ( int factor )
+void  setStrikeOut ( bool enable )
+void  setStyle ( Style style )
+void  setStyleHint ( StyleHint hint, StyleStrategy strategy = PreferDefault )
+void  setStyleStrategy ( StyleStrategy s )
+void  setUnderline ( bool enable )
+void  setWeight ( int weight )
+void  setWordSpacing ( qreal spacing )
+int  stretch () const
+bool  strikeOut () const
+Style  style () const
+StyleHint  styleHint () const
+StyleStrategy  styleStrategy () const
+QString  toString () const
+bool  underline () const
+int  weight () const
+qreal  wordSpacing () const
+operator QVariant () const
+bool  operator!= ( const QFont & f ) const
+bool  operator< ( const QFont & f ) const
+QFont &  operator= ( const QFont & font )
+bool  operator== ( const QFont & f ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+void  insertSubstitution ( const QString & familyName, const QString & substituteName )
+void  insertSubstitutions ( const QString & familyName, const QStringList & substituteNames )
+void  removeSubstitution ( const QString & familyName )
+QString  substitute ( const QString & familyName )
+QStringList  substitutes ( const QString & familyName )
+QStringList  substitutions ()

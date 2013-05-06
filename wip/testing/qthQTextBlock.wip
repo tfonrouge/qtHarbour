@@ -1,0 +1,60 @@
+/*
+ * $Id: qthQTextBlock.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#begindump
+#define iterator    QTextBlock::iterator
+#enddump
+
+#varname textBlock
+
+CLASS QTextBlock FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTextBlock ( const QTextBlock & other )
+iterator  begin () const
+QTextBlockFormat  blockFormat () const
+int  blockFormatIndex () const
+int  blockNumber () const
+QTextCharFormat  charFormat () const
+int  charFormatIndex () const
+void  clearLayout ()
+bool  contains ( int position ) const
+const QTextDocument *  document () const
+iterator  end () const
+int  firstLineNumber () const
+bool  isValid () const
+bool  isVisible () const
+QTextLayout *  layout () const
+int  length () const
+int  lineCount () const
+QTextBlock  next () const
+int  position () const
+QTextBlock  previous () const
+int  revision () const
+void  setLineCount ( int count )
+void  setRevision ( int rev )
+void  setUserData ( QTextBlockUserData * data )
+void  setUserState ( int state )
+void  setVisible ( bool visible )
+QString  text () const
+
+#if QT_VERSION >= 0x040700
+Qt::LayoutDirection  textDirection () const
+
+QTextList *  textList () const
+QTextBlockUserData *  userData () const
+int  userState () const
+bool  operator!= ( const QTextBlock & other ) const
+bool  operator< ( const QTextBlock & other ) const
+QTextBlock &  operator= ( const QTextBlock & other )
+bool  operator== ( const QTextBlock & other ) const

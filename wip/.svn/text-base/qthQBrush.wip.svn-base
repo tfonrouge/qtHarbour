@@ -1,0 +1,51 @@
+/*
+ * $Id: qthQBrush.wip 137 2011-07-20 06:29:59Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname brush
+
+CLASS QBrush FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QBrush ()
+QBrush ( Qt::BrushStyle style )
+QBrush ( const QColor & color, Qt::BrushStyle style = Qt::SolidPattern )
+QBrush ( Qt::GlobalColor color, Qt::BrushStyle style = Qt::SolidPattern )
+QBrush ( const QColor & color, const QPixmap & pixmap )
+QBrush ( Qt::GlobalColor color, const QPixmap & pixmap )
+QBrush ( const QPixmap & pixmap )
+QBrush ( const QImage & image )
+QBrush ( const QBrush & other )
+QBrush ( const QGradient & gradient )
+~QBrush ()
+const QColor &  color () const
+const QGradient *  gradient () const
+bool  isOpaque () const
+#if obsolete
+const QMatrix &  matrix () const
+void  setColor ( const QColor & color )
+void  setColor ( Qt::GlobalColor color )
+#if obsolete
+void  setMatrix ( const QMatrix & matrix )
+void  setStyle ( Qt::BrushStyle style )
+void  setTexture ( const QPixmap & pixmap )
+void  setTextureImage ( const QImage & image )
+void  setTransform ( const QTransform & matrix )
+Qt::BrushStyle  style () const
+QPixmap  texture () const
+QImage  textureImage () const
+QTransform  transform () const
+//operator QVariant () const
+bool  operator!= ( const QBrush & brush ) const
+QBrush &  operator= ( const QBrush & brush )
+bool  operator== ( const QBrush & brush ) const

@@ -1,0 +1,4 @@
+
+enum  HorizontalHeaderFormat { SingleLetterDayNames, ShortDayNames, LongDayNames, NoHorizontalHeader }
+enum  SelectionMode { NoSelection, SingleSelection }
+enum  VerticalHeaderFormat { ISOWeekNumbers, NoVerticalHeader }

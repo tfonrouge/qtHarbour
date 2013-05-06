@@ -1,0 +1,2 @@
+
+enum	EchoMode { Normal, NoEcho, Password, PasswordEchoOnEdit }

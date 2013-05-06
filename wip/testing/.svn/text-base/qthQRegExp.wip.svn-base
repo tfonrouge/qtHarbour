@@ -1,0 +1,53 @@
+/*
+ * $Id: qthQRegExp.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname regExp
+
+CLASS QRegExp FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QRegExp ()
+QRegExp ( const QString & pattern, Qt::CaseSensitivity cs = Qt::CaseSensitive, PatternSyntax syntax = RegExp )
+QRegExp ( const QRegExp & rx )
+~QRegExp ()
+QString  cap ( int nth = 0 ) const
+int  captureCount () const
+QStringList  capturedTexts () const
+Qt::CaseSensitivity  caseSensitivity () const
+QString  errorString () const
+bool  exactMatch ( const QString & str ) const
+int  indexIn ( const QString & str, int offset = 0, CaretMode caretMode = CaretAtZero ) const
+bool  isEmpty () const
+bool  isMinimal () const
+bool  isValid () const
+int  lastIndexIn ( const QString & str, int offset = -1, CaretMode caretMode = CaretAtZero ) const
+int  matchedLength () const
+QString  pattern () const
+PatternSyntax  patternSyntax () const
+int  pos ( int nth = 0 ) const
+void  setCaseSensitivity ( Qt::CaseSensitivity cs )
+void  setMinimal ( bool minimal )
+void  setPattern ( const QString & pattern )
+void  setPatternSyntax ( PatternSyntax syntax )
+bool  operator!= ( const QRegExp & rx ) const
+QRegExp &  operator= ( const QRegExp & rx )
+bool  operator== ( const QRegExp & rx ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QString  escape ( const QString & str )

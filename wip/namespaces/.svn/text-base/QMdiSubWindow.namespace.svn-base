@@ -1,0 +1,3 @@
+
+enum  SubWindowOption { RubberBandResize, RubberBandMove }
+flags  SubWindowOptions

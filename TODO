@@ -1,0 +1,12 @@
+/*
+ * $Id: TODO 79 2011-02-19 19:40:14Z tfonrouge $
+ */
+
+MT
+==
+
+  * tfonrouge: Write some framework tests
+    ( create 'n' separated QTableWidget and assign a thread for each one
+      to perform operations with the TableWidgetItem's )
+
+  * tfonrouge: Protect assigning/retrieving(?) of key/values in hash tables

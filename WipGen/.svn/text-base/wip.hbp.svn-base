@@ -1,0 +1,13 @@
+#
+# $Id$
+#
+
+-o../bin/wip
+
+-es2 -w3
+
+#-D__HBDEBUG -gtxwc
+
+-lhbct
+
+wip.prg wip_lib.prg

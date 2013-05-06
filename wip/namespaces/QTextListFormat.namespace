@@ -1,0 +1,3 @@
+
+enum	Style { ListDisc, ListCircle, ListSquare, ListDecimal, ..., ListUpperRoman }
+

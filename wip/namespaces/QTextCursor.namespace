@@ -1,0 +1,9 @@
+
+enum	MoveMode { MoveAnchor, KeepAnchor }
+{
+    QTextCursor::MoveAnchor	0	Moves the anchor to the same position as the cursor itself.
+    QTextCursor::KeepAnchor	1	Keeps the anchor where it is.
+}
+
+enum	MoveOperation { NoMove, Start, StartOfLine, StartOfBlock, ..., PreviousRow }
+enum	SelectionType { Document, BlockUnderCursor, LineUnderCursor, WordUnderCursor }

@@ -1,0 +1,11 @@
+
+enum	ProcessEventsFlag { AllEvents, ExcludeUserInputEvents, ExcludeSocketNotifiers, WaitForMoreEvents, DeferredDeletion }
+{
+    QEventLoop::AllEvents	0x00	All events. Note that DeferredDelete events are processed specially. See QObject::deleteLater() for more details.
+    QEventLoop::ExcludeUserInputEvents	0x01	Do not process user input events, such as ButtonPress and KeyPress. Note that the events are not discarded; they will be delivered the next time processEvents() is called without the ExcludeUserInputEvents flag.
+    QEventLoop::ExcludeSocketNotifiers	0x02	Do not process socket notifier events. Note that the events are not discarded; they will be delivered the next time processEvents() is called without the ExcludeSocketNotifiers flag.
+    QEventLoop::WaitForMoreEvents	0x04	Wait for events if no pending events are available.
+    QEventLoop::DeferredDeletion	0x10	deprecated - do not use.
+}
+
+flags	ProcessEventsFlags

@@ -1,0 +1,11 @@
+
+enum	FindFlag { FindBackward, FindCaseSensitively, FindWholeWords }
+flags	FindFlags
+enum	MetaInformation { DocumentTitle, DocumentUrl }
+enum	ResourceType { HtmlResource, ImageResource, StyleSheetResource, UserResource }
+enum	Stacks { UndoStack, RedoStack, UndoAndRedoStacks }
+{
+    QTextDocument::UndoStack	0x01	The undo stack.
+    QTextDocument::RedoStack	0x02	The redo stack.
+    QTextDocument::UndoAndRedoStacks	UndoStack | RedoStack	Both the undo and redo stacks.
+}

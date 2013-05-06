@@ -1,0 +1,82 @@
+/*
+ * $Id: qthQMessageBox.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname messageBox
+
+CLASS QMessageBox FROM QDialog
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QMessageBox ( QWidget * parent = 0 )
+QMessageBox ( Icon icon, const QString & title, const QString & text, StandardButtons buttons = NoButton, QWidget * parent = 0, Qt::WindowFlags f = Qt::Dialog | Qt::MSWindowsFixedSizeDialogHint )
+~QMessageBox ()
+void  addButton ( QAbstractButton * button, ButtonRole role )
+QPushButton *  addButton ( const QString & text, ButtonRole role )
+QPushButton *  addButton ( StandardButton button )
+QAbstractButton *  button ( StandardButton which ) const
+ButtonRole  buttonRole ( QAbstractButton * button ) const
+QList<QAbstractButton *>  buttons () const
+QAbstractButton *  clickedButton () const
+QPushButton *  defaultButton () const
+QString  detailedText () const
+QAbstractButton *  escapeButton () const
+Icon  icon () const
+QPixmap  iconPixmap () const
+QString  informativeText () const
+void  open ( QObject * receiver, const char * member )
+void  removeButton ( QAbstractButton * button )
+void  setDefaultButton ( QPushButton * button )
+void  setDefaultButton ( StandardButton button )
+void  setDetailedText ( const QString & text )
+void  setEscapeButton ( QAbstractButton * button )
+void  setEscapeButton ( StandardButton button )
+void  setIcon ( Icon )
+void  setIconPixmap ( const QPixmap & pixmap )
+void  setInformativeText ( const QString & text )
+void  setStandardButtons ( StandardButtons buttons )
+void  setText ( const QString & text )
+void  setTextFormat ( Qt::TextFormat format )
+void  setWindowModality ( Qt::WindowModality windowModality )
+void  setWindowTitle ( const QString & title )
+StandardButton  standardButton ( QAbstractButton * button ) const
+StandardButtons  standardButtons () const
+QString  text () const
+Qt::TextFormat  textFormat () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  setVisible ( bool visible )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+int  exec ()
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+void  about ( QWidget * parent, const QString & title, const QString & text )
+void  aboutQt ( QWidget * parent, const QString & title = QString() )
+StandardButton  critical ( QWidget * parent, const QString & title, const QString & text, StandardButtons buttons = Ok, StandardButton defaultButton = NoButton )
+StandardButton  information ( QWidget * parent, const QString & title, const QString & text, StandardButtons buttons = Ok, StandardButton defaultButton = NoButton )
+StandardButton  question ( QWidget * parent, const QString & title, const QString & text, StandardButtons buttons = Ok, StandardButton defaultButton = NoButton )
+StandardButton  warning ( QWidget * parent, const QString & title, const QString & text, StandardButtons buttons = Ok, StandardButton defaultButton = NoButton )

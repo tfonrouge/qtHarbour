@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/qth/!svn/ver/154/trunk/include
+END
+qth_classes.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/qth/!svn/ver/148/trunk/include/qth_classes.h
+END
+qtHarbour.ch
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/qth/!svn/ver/151/trunk/include/qtHarbour.ch
+END
+qthMainWindow.ch
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/qth/!svn/ver/151/trunk/include/qthMainWindow.ch
+END
+qthmoc.ch
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/qth/!svn/ver/154/trunk/include/qthmoc.ch
+END
+property.ch
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/qth/!svn/ver/151/trunk/include/property.ch
+END
+qtHarbour_global.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/qth/!svn/ver/131/trunk/include/qtHarbour_global.h
+END
+qtharbour.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/qth/!svn/ver/148/trunk/include/qtharbour.h
+END
+qth_DynSlot.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/qth/!svn/ver/131/trunk/include/qth_DynSlot.h
+END

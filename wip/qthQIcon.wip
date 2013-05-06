@@ -1,0 +1,55 @@
+/*
+ * $Id: qthQIcon.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname icon
+
+CLASS QIcon FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QIcon ()
+QIcon ( const QPixmap & pixmap )
+QIcon ( const QIcon & other )
+QIcon ( const QString & fileName )
+QIcon ( QIconEngine * engine )
+QIcon ( QIconEngineV2 * engine )
+~QIcon ()
+QSize  actualSize ( const QSize & size, Mode mode = Normal, State state = Off ) const
+void  addFile ( const QString & fileName, const QSize & size = QSize(), Mode mode = Normal, State state = Off )
+void  addPixmap ( const QPixmap & pixmap, Mode mode = Normal, State state = Off )
+QList<QSize>  availableSizes ( Mode mode = Normal, State state = Off ) const
+qint64  cacheKey () const
+bool  isNull () const
+
+#if QT_VERSION >= 0x040700
+QString  name () const
+
+void  paint ( QPainter * painter, const QRect & rect, Qt::Alignment alignment = Qt::AlignCenter, Mode mode = Normal, State state = Off ) const
+void  paint ( QPainter * painter, int x, int y, int w, int h, Qt::Alignment alignment = Qt::AlignCenter, Mode mode = Normal, State state = Off ) const
+QPixmap  pixmap ( const QSize & size, Mode mode = Normal, State state = Off ) const
+QPixmap  pixmap ( int w, int h, Mode mode = Normal, State state = Off ) const
+QPixmap  pixmap ( int extent, Mode mode = Normal, State state = Off ) const
+//operator QVariant () const
+QIcon &  operator= ( const QIcon & other )
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QIcon  fromTheme ( const QString & name, const QIcon & fallback = QIcon() )
+bool  hasThemeIcon ( const QString & name )
+void  setThemeName ( const QString & name )
+void  setThemeSearchPaths ( const QStringList & paths )
+QString  themeName ()
+QStringList  themeSearchPaths ()

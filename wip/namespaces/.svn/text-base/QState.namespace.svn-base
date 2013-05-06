@@ -1,0 +1,2 @@
+
+enum	ChildMode { ExclusiveStates, ParallelStates }

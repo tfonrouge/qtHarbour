@@ -1,0 +1,38 @@
+/*
+ * $Id: qthQInputContext.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname inputContext
+
+CLASS QInputContext FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QInputContext ( QObject * parent = 0 )
+virtual  ~QInputContext ()
+virtual QList<QAction *>  actions ()
+virtual bool  filterEvent ( const QEvent * event )
+QWidget *  focusWidget () const
+virtual QFont  font () const
+virtual QString  identifierName () = 0
+virtual bool  isComposing () const = 0
+virtual QString  language () = 0
+virtual void  mouseHandler ( int x, QMouseEvent * event )
+virtual void  reset () = 0
+void  sendEvent ( const QInputMethodEvent & event )
+virtual void  setFocusWidget ( QWidget * widget )
+QTextFormat  standardFormat ( StandardFormat s ) const
+#if ToImplement
+virtual bool  symbianFilterEvent ( QWidget * keywidget, const QSymbianEvent * event )
+virtual void  update ()
+virtual void  widgetDestroyed ( QWidget * widget )
+#if ToImplement
+virtual bool  x11FilterEvent ( QWidget * keywidget, XEvent * event )

@@ -1,0 +1,22 @@
+
+enum	Filter { Dirs, AllDirs, Files, Drives, ..., CaseSensitive }
+typedef	FilterSpec
+flags	Filters
+enum	SortFlag { Name, Time, Size, Type, ..., LocaleAware }
+{
+    QDir::Name	0x00	Sort by name.
+    QDir::Time	0x01	Sort by time (modification time).
+    QDir::Size	0x02	Sort by file size.
+    QDir::Type	0x80	Sort by file type (extension).
+    QDir::Unsorted	0x03	Do not sort.
+    QDir::NoSort	-1	Not sorted by default.
+    QDir::DirsFirst	0x04	Put the directories first, then the files.
+    QDir::DirsLast	0x20	Put the files first, then the directories.
+    QDir::Reversed	0x08	Reverse the sort order.
+    QDir::IgnoreCase	0x10	Sort case-insensitively.
+    QDir::LocaleAware	0x40	Sort items appropriately using the current locale settings.
+}
+
+flags	SortFlags
+typedef	SortSpec
+

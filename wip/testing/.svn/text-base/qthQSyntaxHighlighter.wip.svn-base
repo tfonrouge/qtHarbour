@@ -1,0 +1,38 @@
+/*
+ * $Id: qthQSyntaxHighlighter.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#begindump
+#include <QTextDocument>
+#include <QTextEdit>
+#enddump
+
+#varname syntaxHighlighter
+
+CLASS QSyntaxHighlighter FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+//QSyntaxHighlighter ( QObject * parent )
+//QSyntaxHighlighter ( QTextDocument * parent )
+//QSyntaxHighlighter ( QTextEdit * parent )
+virtual  ~QSyntaxHighlighter ()
+QTextDocument *  document () const
+void  setDocument ( QTextDocument * doc )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  rehighlight ()
+void  rehighlightBlock ( const QTextBlock & block )

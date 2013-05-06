@@ -1,0 +1,4 @@
+
+enum	BorderStyle { BorderStyle_None, BorderStyle_Dotted, BorderStyle_Dashed, BorderStyle_Solid, ..., BorderStyle_Outset }
+enum	Position { InFlow, FloatLeft, FloatRight }
+

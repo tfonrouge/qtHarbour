@@ -1,0 +1,29 @@
+/*
+ * $Id: qthQAbstractTransition.wip 128 2011-04-14 15:49:46Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname abstractTransition
+
+CLASS QAbstractTransition FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+//QAbstractTransition ( QState * sourceState = 0 )
+virtual  ~QAbstractTransition ()
+void  addAnimation ( QAbstractAnimation * animation )
+QList<QAbstractAnimation *>  animations () const
+QStateMachine *  machine () const
+void  removeAnimation ( QAbstractAnimation * animation )
+void  setTargetState ( QAbstractState * target )
+void  setTargetStates ( const QList<QAbstractState *> & targets )
+QState *  sourceState () const
+QAbstractState *  targetState () const
+QList<QAbstractState *>  targetStates () const

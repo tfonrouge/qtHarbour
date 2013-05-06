@@ -1,0 +1,68 @@
+/*
+ * $Id: qthQAbstractSpinBox.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QValidator
+
+#varname abstractSpinBox
+
+CLASS QAbstractSpinBox FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QAbstractSpinBox ( QWidget * parent = 0 )
+~QAbstractSpinBox ()
+Qt::Alignment  alignment () const
+ButtonSymbols  buttonSymbols () const
+CorrectionMode  correctionMode () const
+virtual void  fixup ( QString & input ) const
+bool  hasAcceptableInput () const
+bool  hasFrame () const
+void  interpretText ()
+bool  isAccelerated () const
+bool  isReadOnly () const
+bool  keyboardTracking () const
+void  setAccelerated ( bool on )
+void  setAlignment ( Qt::Alignment flag )
+void  setButtonSymbols ( ButtonSymbols bs )
+void  setCorrectionMode ( CorrectionMode cm )
+void  setFrame ( bool )
+void  setKeyboardTracking ( bool kt )
+void  setReadOnly ( bool r )
+void  setSpecialValueText ( const QString & txt )
+void  setWrapping ( bool w )
+QString  specialValueText () const
+virtual void  stepBy ( int steps )
+QString  text () const
+virtual QValidator::State  validate ( QString & input, int & pos ) const
+bool  wrapping () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  event ( QEvent * event )
+virtual QVariant  inputMethodQuery ( Qt::InputMethodQuery query ) const
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+virtual void  clear ()
+void  selectAll ()
+void  stepDown ()
+void  stepUp ()

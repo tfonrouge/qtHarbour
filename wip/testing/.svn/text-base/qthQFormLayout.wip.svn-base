@@ -1,0 +1,75 @@
+/*
+ * $Id: qthQFormLayout.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname formLayout
+
+CLASS QFormLayout FROM QLayout
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QFormLayout ( QWidget * parent = 0 )
+~QFormLayout ()
+void  addRow ( QWidget * label, QWidget * field )
+void  addRow ( QWidget * label, QLayout * field )
+void  addRow ( const QString & labelText, QWidget * field )
+void  addRow ( const QString & labelText, QLayout * field )
+void  addRow ( QWidget * widget )
+void  addRow ( QLayout * layout )
+FieldGrowthPolicy  fieldGrowthPolicy () const
+Qt::Alignment  formAlignment () const
+void  getItemPosition ( int index, int * rowPtr, ItemRole * rolePtr ) const
+void  getLayoutPosition ( QLayout * layout, int * rowPtr, ItemRole * rolePtr ) const
+void  getWidgetPosition ( QWidget * widget, int * rowPtr, ItemRole * rolePtr ) const
+int  horizontalSpacing () const
+void  insertRow ( int row, QWidget * label, QWidget * field )
+void  insertRow ( int row, QWidget * label, QLayout * field )
+void  insertRow ( int row, const QString & labelText, QWidget * field )
+void  insertRow ( int row, const QString & labelText, QLayout * field )
+void  insertRow ( int row, QWidget * widget )
+void  insertRow ( int row, QLayout * layout )
+QLayoutItem *  itemAt ( int row, ItemRole role ) const
+Qt::Alignment  labelAlignment () const
+QWidget *  labelForField ( QWidget * field ) const
+QWidget *  labelForField ( QLayout * field ) const
+int  rowCount () const
+RowWrapPolicy  rowWrapPolicy () const
+void  setFieldGrowthPolicy ( FieldGrowthPolicy policy )
+void  setFormAlignment ( Qt::Alignment alignment )
+void  setHorizontalSpacing ( int spacing )
+void  setItem ( int row, ItemRole role, QLayoutItem * item )
+void  setLabelAlignment ( Qt::Alignment alignment )
+void  setLayout ( int row, ItemRole role, QLayout * layout )
+void  setRowWrapPolicy ( RowWrapPolicy policy )
+void  setSpacing ( int spacing )
+void  setVerticalSpacing ( int spacing )
+void  setWidget ( int row, ItemRole role, QWidget * widget )
+int  spacing () const
+int  verticalSpacing () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  addItem ( QLayoutItem * item )
+virtual int  count () const
+virtual Qt::Orientations  expandingDirections () const
+virtual bool  hasHeightForWidth () const
+virtual int  heightForWidth ( int width ) const
+virtual void  invalidate ()
+virtual QLayoutItem *  itemAt ( int index ) const
+virtual QSize  minimumSize () const
+virtual void  setGeometry ( const QRect & rect )
+virtual QSize  sizeHint () const
+virtual QLayoutItem *  takeAt ( int index )

@@ -1,0 +1,44 @@
+/*
+ * $Id: qthQTimer.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname timer
+
+CLASS QTimer FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTimer ( QObject * parent = 0 )
+~QTimer ()
+int  interval () const
+bool  isActive () const
+bool  isSingleShot () const
+void  setInterval ( int msec )
+void  setSingleShot ( bool singleShot )
+int  timerId () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  start ( int msec )
+void  start ()
+void  stop ()
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+void  singleShot ( int msec, QObject * receiver, const char * member )

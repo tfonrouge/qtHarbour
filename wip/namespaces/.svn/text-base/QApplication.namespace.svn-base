@@ -1,0 +1,4 @@
+
+enum	ColorSpec { NormalColor, CustomColor, ManyColor }
+typedef	QS60MainApplicationFactory
+enum	Type { Tty, GuiClient, GuiServer }

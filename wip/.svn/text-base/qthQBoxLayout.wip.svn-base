@@ -1,0 +1,60 @@
+/*
+ * $Id: qthQBoxLayout.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname boxLayout
+
+CLASS QBoxLayout FROM QLayout
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QBoxLayout ( Direction dir, QWidget * parent = 0 )
+~QBoxLayout ()
+void  addLayout ( QLayout * layout, int stretch = 0 )
+void  addSpacerItem ( QSpacerItem * spacerItem )
+void  addSpacing ( int size )
+void  addStretch ( int stretch = 0 )
+void  addStrut ( int size )
+void  addWidget ( QWidget * widget, int stretch = 0, Qt::Alignment alignment = 0 )
+Direction  direction () const
+void  insertLayout ( int index, QLayout * layout, int stretch = 0 )
+void  insertSpacerItem ( int index, QSpacerItem * spacerItem )
+void  insertSpacing ( int index, int size )
+void  insertStretch ( int index, int stretch = 0 )
+void  insertWidget ( int index, QWidget * widget, int stretch = 0, Qt::Alignment alignment = 0 )
+void  setDirection ( Direction direction )
+void  setSpacing ( int spacing )
+void  setStretch ( int index, int stretch )
+bool  setStretchFactor ( QWidget * widget, int stretch )
+bool  setStretchFactor ( QLayout * layout, int stretch )
+int  spacing () const
+int  stretch ( int index ) const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  addItem ( QLayoutItem * item )
+virtual int  count () const
+virtual Qt::Orientations  expandingDirections () const
+virtual bool  hasHeightForWidth () const
+virtual int  heightForWidth ( int w ) const
+virtual void  invalidate ()
+virtual QLayoutItem *  itemAt ( int index ) const
+virtual QSize  maximumSize () const
+virtual int  minimumHeightForWidth ( int w ) const
+virtual QSize  minimumSize () const
+virtual void  setGeometry ( const QRect & r )
+virtual QSize  sizeHint () const
+virtual QLayoutItem *  takeAt ( int index )

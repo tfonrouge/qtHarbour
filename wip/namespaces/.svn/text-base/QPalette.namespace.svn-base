@@ -1,0 +1,23 @@
+
+enum  ColorGroup { Disabled, Active, Inactive, Normal }
+{
+    QPalette::Disabled	1	 
+    QPalette::Active	0	 
+    QPalette::Inactive	2	 
+    QPalette::Normal	Active	synonym for Active
+}
+enum  ColorRole { Window, Background, WindowText, Foreground, ..., NoRole }
+{
+    QPalette::Window	10	A general background color.
+    QPalette::Background	Window	This value is obsolete. Use Window instead.
+    QPalette::WindowText	0	A general foreground color.
+    QPalette::Foreground	WindowText	This value is obsolete. Use WindowText instead.
+    QPalette::Base	9	Used mostly as the background color for text entry widgets, but can also be used for other painting - such as the background of combobox drop down lists and toolbar handles. It is usually white or another light color.
+    QPalette::AlternateBase	16	Used as the alternate background color in views with alternating row colors (see QAbstractItemView::setAlternatingRowColors()).
+    QPalette::ToolTipBase	18	Used as the background color for QToolTip and QWhatsThis. Tool tips use the Inactive color group of QPalette, because tool tips are not active windows.
+    QPalette::ToolTipText	19	Used as the foreground color for QToolTip and QWhatsThis. Tool tips use the Inactive color group of QPalette, because tool tips are not active windows.
+    QPalette::Text	6	The foreground color used with Base. This is usually the same as the WindowText, in which case it must provide good contrast with Window and Base.
+    QPalette::Button	1	The general button background color. This background can be different from Window as some styles require a different background color for buttons.
+    QPalette::ButtonText	8	A foreground color used with the Button color.
+    QPalette::BrightText	7	A text color that is very different from WindowText, and contrasts well with e.g. Dark. Typically used for text that needs to be drawn where Text or WindowText would give poor contrast, such as on pressed push buttons. Note that text colors can be used for things other than just words; text colors are usually used for text, but it's quite common to use the text color roles for lines, icons, etc.
+}

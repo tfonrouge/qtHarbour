@@ -1,0 +1,4 @@
+
+enum	ItemType { Type, UserType }
+QTableWidgetItem::Type	0	The default type for table widget items.
+QTableWidgetItem::UserType	1000	The minimum value for custom types. Values below UserType are reserved by Qt.

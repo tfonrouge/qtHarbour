@@ -1,0 +1,52 @@
+/*
+ * $Id: qthQPushButton.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#begindump
+#include <QWidget>
+#include <QIcon>
+#enddump
+
+#varname pushButton
+
+CLASS QPushButton FROM QAbstractButton
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QPushButton ( QWidget * parent = 0 )
+QPushButton ( const QString & text, QWidget * parent = 0 )
+QPushButton ( const QIcon & icon, const QString & text, QWidget * parent = 0 )
+~QPushButton ()
+bool  autoDefault () const
+bool  isDefault () const
+bool  isFlat () const
+QMenu *  menu () const
+void  setAutoDefault ( bool )
+void  setDefault ( bool )
+void  setFlat ( bool )
+void  setMenu ( QMenu * menu )
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  showMenu ()

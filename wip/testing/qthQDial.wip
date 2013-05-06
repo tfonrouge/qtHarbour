@@ -1,0 +1,47 @@
+/*
+ * $Id: qthQDial.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname dial
+
+CLASS QDial FROM QAbstractSlider
+
+/********************/
+/* Public Functions */
+/********************/
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QDial ( QWidget * parent = 0 )
+~QDial ()
+int  notchSize () const
+qreal  notchTarget () const
+bool  notchesVisible () const
+void  setNotchTarget ( double target )
+bool  wrapping () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  setNotchesVisible ( bool visible )
+void  setWrapping ( bool on )

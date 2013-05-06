@@ -1,0 +1,141 @@
+
+flags	Alignment
+enum	AlignmentFlag { AlignLeft, AlignRight, AlignHCenter, AlignJustify, ..., AlignVertical_Mask }
+enum	AnchorAttribute { AnchorName, AnchorHref }
+enum	AnchorPoint { AnchorLeft, AnchorHorizontalCenter, AnchorRight, AnchorTop, AnchorVerticalCenter, AnchorBottom }
+enum	ApplicationAttribute { AA_ImmediateWidgetCreation, AA_MSWindowsUseDirect3DByDefault, AA_DontShowIconsInMenus, AA_NativeWindows, ..., AA_S60DontConstructApplicationPanes }
+enum	ArrowType { NoArrow, UpArrow, DownArrow, LeftArrow, RightArrow }
+enum	AspectRatioMode { IgnoreAspectRatio, KeepAspectRatio, KeepAspectRatioByExpanding }
+enum	Axis { XAxis, YAxis, ZAxis }
+enum	BGMode { TransparentMode, OpaqueMode }
+enum	BrushStyle { NoBrush, SolidPattern, Dense1Pattern, Dense2Pattern, ..., TexturePattern }
+{
+    Qt::NoBrush	0	No brush pattern.
+    Qt::SolidPattern	1	Uniform color.
+    Qt::Dense1Pattern	2	Extremely dense brush pattern.
+    Qt::Dense2Pattern	3	Very dense brush pattern.
+    Qt::Dense3Pattern	4	Somewhat dense brush pattern.
+    Qt::Dense4Pattern	5	Half dense brush pattern.
+    Qt::Dense5Pattern	6	Somewhat sparse brush pattern.
+    Qt::Dense6Pattern	7	Very sparse brush pattern.
+    Qt::Dense7Pattern	8	Extremely sparse brush pattern.
+    Qt::HorPattern	9	Horizontal lines.
+    Qt::VerPattern	10	Vertical lines.
+    Qt::CrossPattern	11	Crossing horizontal and vertical lines.
+    Qt::BDiagPattern	12	Backward diagonal lines.
+    Qt::FDiagPattern	13	Forward diagonal lines.
+    Qt::DiagCrossPattern	14	Crossing diagonal lines.
+    Qt::LinearGradientPattern	15	Linear gradient (set using a dedicated QBrush constructor).
+    Qt::ConicalGradientPattern	17	Conical gradient (set using a dedicated QBrush constructor).
+    Qt::RadialGradientPattern	16	Radial gradient (set using a dedicated QBrush constructor).
+    Qt::TexturePattern	24	Custom pattern (see QBrush::setTexture()).
+}
+enum	CaseSensitivity { CaseInsensitive, CaseSensitive }
+enum	CheckState { Unchecked, PartiallyChecked, Checked }
+enum	ClipOperation { NoClip, ReplaceClip, IntersectClip, UniteClip }
+enum	ConnectionType { AutoConnection, DirectConnection, QueuedConnection, BlockingQueuedConnection, UniqueConnection, AutoCompatConnection }
+enum	ContextMenuPolicy { NoContextMenu, PreventContextMenu, DefaultContextMenu, ActionsContextMenu, CustomContextMenu }
+enum	CoordinateSystem { DeviceCoordinates, LogicalCoordinates }
+enum	Corner { TopLeftCorner, TopRightCorner, BottomLeftCorner, BottomRightCorner }
+enum	CursorShape { ArrowCursor, UpArrowCursor, CrossCursor, WaitCursor, ..., BitmapCursor }
+enum	DateFormat { TextDate, ISODate, SystemLocaleShortDate, SystemLocaleLongDate, ..., LocalDate }
+enum	DayOfWeek { Monday, Tuesday, Wednesday, Thursday, ..., Sunday }
+enum	DockWidgetArea { LeftDockWidgetArea, RightDockWidgetArea, TopDockWidgetArea, BottomDockWidgetArea, AllDockWidgetAreas, NoDockWidgetArea }
+flags	DockWidgetAreas
+enum	DropAction { CopyAction, MoveAction, LinkAction, ActionMask, IgnoreAction, TargetMoveAction }
+flags	DropActions
+enum	EventPriority { HighEventPriority, NormalEventPriority, LowEventPriority }
+enum	FillRule { OddEvenFill, WindingFill }
+enum	FocusPolicy { TabFocus, ClickFocus, StrongFocus, WheelFocus, NoFocus }
+enum	FocusReason { MouseFocusReason, TabFocusReason, BacktabFocusReason, ActiveWindowFocusReason, ..., OtherFocusReason }
+enum	GestureFlag { DontStartGestureOnChildren, ReceivePartialGestures, IgnoredGesturesPropagateToParent }
+flags	GestureFlags
+enum	GestureState { GestureStarted, GestureUpdated, GestureFinished, GestureCanceled }
+enum	GestureType { TapGesture, TapAndHoldGesture, PanGesture, PinchGesture, SwipeGesture, CustomGesture }
+enum	GlobalColor { white, black, red, darkRed, ..., color1 }
+{
+    Qt::white	3	 White (#ffffff)
+    Qt::black	2	 Black (#000000)
+    Qt::red	7	 Red (#ff0000)
+    Qt::darkRed	13	 Dark red (#800000)
+    Qt::green	8	 Green (#00ff00)
+    Qt::darkGreen	14	 Dark green (#008000)
+    Qt::blue	9	 Blue (#0000ff)
+    Qt::darkBlue	15	 Dark blue (#000080)
+    Qt::cyan	10	 Cyan (#00ffff)
+    Qt::darkCyan	16	 Dark cyan (#008080)
+    Qt::magenta	11	 Magenta (#ff00ff)
+    Qt::darkMagenta	17	 Dark magenta (#800080)
+    Qt::yellow	12	 Yellow (#ffff00)
+    Qt::darkYellow	18	 Dark yellow (#808000)
+    Qt::gray	5	 Gray (#a0a0a4)
+    Qt::darkGray	4	 Dark gray (#808080)
+    Qt::lightGray	6	 Light gray (#c0c0c0)
+    Qt::transparent	19	a transparent black value (i.e., QColor(0, 0, 0, 0))
+    Qt::color0	0	0 pixel value (for bitmaps)
+    Qt::color1	1	1 pixel value (for bitmaps)
+}
+typedef	HANDLE
+enum	HitTestAccuracy { ExactHit, FuzzyHit }
+enum	ImageConversionFlag { AutoColor, ColorOnly, MonoOnly, DiffuseDither, ..., NoOpaqueDetection }
+flags	ImageConversionFlags
+enum	InputMethodHint { ImhNone, ImhHiddenText, ImhNoAutoUppercase, ImhPreferNumbers, ..., ImhExclusiveInputMask }
+flags	InputMethodHints
+enum	InputMethodQuery { ImMicroFocus, ImFont, ImCursorPosition, ImSurroundingText, ..., ImAnchorPosition }
+enum	ItemDataRole { DisplayRole, DecorationRole, EditRole, ToolTipRole, ..., UserRole }
+enum	ItemFlag { NoItemFlags, ItemIsSelectable, ItemIsEditable, ItemIsDragEnabled, ..., ItemIsTristate }
+flags	ItemFlags
+enum	ItemSelectionMode { ContainsItemShape, IntersectsItemShape, ContainsItemBoundingRect, IntersectsItemBoundingRect }
+enum	Key { Key_Escape, Key_Tab, Key_Backtab, Key_Backspace, ..., Key_Cancel }
+enum	KeyboardModifier { NoModifier, ShiftModifier, ControlModifier, AltModifier, ..., GroupSwitchModifier }
+flags	KeyboardModifiers
+enum	LayoutDirection { LeftToRight, RightToLeft, LayoutDirectionAuto }
+enum	MaskMode { MaskInColor, MaskOutColor }
+enum	MatchFlag { MatchExactly, MatchFixedString, MatchContains, MatchStartsWith, ..., MatchRecursive }
+flags	MatchFlags
+enum	Modifier { SHIFT, META, CTRL, ALT, UNICODE_ACCEL }
+enum	MouseButton { NoButton, LeftButton, RightButton, MidButton, ..., XButton2 }
+flags	MouseButtons
+enum	NavigationMode { NavigationModeNone, NavigationModeKeypadTabOrder, NavigationModeKeypadDirectional, NavigationModeCursorAuto, NavigationModeCursorForceVisible }
+enum	Orientation { Horizontal, Vertical }
+flags	Orientations
+enum	PenCapStyle { FlatCap, SquareCap, RoundCap }
+enum	PenJoinStyle { MiterJoin, BevelJoin, RoundJoin, SvgMiterJoin }
+enum	PenStyle { NoPen, SolidLine, DashLine, DotLine, ..., CustomDashLine }
+enum	ScrollBarPolicy { ScrollBarAsNeeded, ScrollBarAlwaysOff, ScrollBarAlwaysOn }
+enum	ShortcutContext { WidgetShortcut, WidgetWithChildrenShortcut, WindowShortcut, ApplicationShortcut }
+enum	SizeHint { MinimumSize, PreferredSize, MaximumSize, MinimumDescent }
+enum	SizeMode { AbsoluteSize, RelativeSize }
+enum	SortOrder { AscendingOrder, DescendingOrder }
+enum	TextElideMode { ElideLeft, ElideRight, ElideMiddle, ElideNone }
+enum	TextFlag { TextSingleLine, TextDontClip, TextExpandTabs, TextShowMnemonic, ..., TextJustificationForced }
+enum	TextFormat { PlainText, RichText, AutoText, LogText }
+enum	TextInteractionFlag { NoTextInteraction, TextSelectableByMouse, TextSelectableByKeyboard, LinksAccessibleByMouse, ..., TextBrowserInteraction }
+flags	TextInteractionFlags
+enum	TileRule { StretchTile, RepeatTile, RoundTile }
+enum	TimeSpec { LocalTime, UTC, OffsetFromUTC }
+enum	ToolBarArea { LeftToolBarArea, RightToolBarArea, TopToolBarArea, BottomToolBarArea, AllToolBarAreas, NoToolBarArea }
+flags	ToolBarAreas
+enum	ToolButtonStyle { ToolButtonIconOnly, ToolButtonTextOnly, ToolButtonTextBesideIcon, ToolButtonTextUnderIcon, ToolButtonFollowStyle }
+enum	TouchPointState { TouchPointPressed, TouchPointMoved, TouchPointStationary, TouchPointReleased }
+flags	TouchPointStates
+enum	TransformationMode { FastTransformation, SmoothTransformation }
+enum	UIEffect { UI_AnimateMenu, UI_FadeMenu, UI_AnimateCombo, UI_AnimateTooltip, UI_FadeTooltip, UI_AnimateToolBox }
+{
+    Qt::UI_AnimateMenu	1	Show animated menus.
+    Qt::UI_FadeMenu	2	Show faded menus.
+    Qt::UI_AnimateCombo	3	Show animated comboboxes.
+    Qt::UI_AnimateTooltip	4	Show tooltip animations.
+    Qt::UI_FadeTooltip	5	Show tooltip fading effects.
+    Qt::UI_AnimateToolBox	6	Reserved
+}
+
+typedef	WFlags
+enum	WhiteSpaceMode { WhiteSpaceNormal, WhiteSpacePre, WhiteSpaceNoWrap }
+enum	WidgetAttribute { WA_AcceptDrops, WA_AlwaysShowToolTips, WA_ContentsPropagated, WA_CustomWhatsThis, ..., WA_X11DoNotAcceptFocus }
+flags	WindowFlags
+enum	WindowFrameSection { NoSection, LeftSection, TopLeftSection, TopSection, ..., TitleBarArea }
+enum	WindowModality { NonModal, WindowModal, ApplicationModal }
+enum	WindowState { WindowNoState, WindowMinimized, WindowMaximized, WindowFullScreen, WindowActive }
+flags	WindowStates
+enum	WindowType { Widget, Window, Dialog, Sheet, ..., WMacNoSheet }

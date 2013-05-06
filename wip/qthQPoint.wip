@@ -1,0 +1,32 @@
+/*
+ * $Id: qthQPoint.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname point
+
+CLASS QPoint FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QPoint ()
+QPoint ( int x, int y )
+bool  isNull () const
+int  manhattanLength () const
+int &  rx ()
+int &  ry ()
+void  setX ( int x )
+void  setY ( int y )
+int  x () const
+int  y () const
+QPoint &  operator*= ( qreal factor )
+QPoint &  operator+= ( const QPoint & point )
+QPoint &  operator-= ( const QPoint & point )
+QPoint &  operator/= ( qreal divisor )

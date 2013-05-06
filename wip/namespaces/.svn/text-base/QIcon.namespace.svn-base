@@ -1,0 +1,14 @@
+
+enum	Mode { Normal, Disabled, Active, Selected }
+{
+    QIcon::Normal	0	Display the pixmap when the user is not interacting with the icon, but the functionality represented by the icon is available.
+    QIcon::Disabled	1	Display the pixmap when the functionality represented by the icon is not available.
+    QIcon::Active	2	Display the pixmap when the functionality represented by the icon is available and the user is interacting with the icon, for example, moving the mouse over it or clicking it.
+    QIcon::Selected	3	Display the pixmap when the item represented by the icon is selected.
+}
+
+enum	State { Off, On }
+{
+    QIcon::Off	1	Display the pixmap when the widget is in an "off" state
+    QIcon::On	0	Display the pixmap when the widget is in an "on" state
+}

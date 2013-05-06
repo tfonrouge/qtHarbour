@@ -1,0 +1,79 @@
+/*
+ * $Id: qthQTreeWidget.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QAbstractItemView INHERITED
+namespace QItemSelectionModel
+
+#varname treeWidget
+
+CLASS QTreeWidget FROM QTreeView
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTreeWidget ( QWidget * parent = 0 )
+~QTreeWidget ()
+void  addTopLevelItem ( QTreeWidgetItem * item )
+void  addTopLevelItems ( const QList<QTreeWidgetItem *> & items )
+void  closePersistentEditor ( QTreeWidgetItem * item, int column = 0 )
+int  columnCount () const
+int  currentColumn () const
+QTreeWidgetItem *  currentItem () const
+void  editItem ( QTreeWidgetItem * item, int column = 0 )
+QList<QTreeWidgetItem *>  findItems ( const QString & text, Qt::MatchFlags flags, int column = 0 ) const
+QTreeWidgetItem *  headerItem () const
+int  indexOfTopLevelItem ( QTreeWidgetItem * item ) const
+void  insertTopLevelItem ( int index, QTreeWidgetItem * item )
+void  insertTopLevelItems ( int index, const QList<QTreeWidgetItem *> & items )
+QTreeWidgetItem *  invisibleRootItem () const
+bool  isFirstItemColumnSpanned ( const QTreeWidgetItem * item ) const
+QTreeWidgetItem *  itemAbove ( const QTreeWidgetItem * item ) const
+QTreeWidgetItem *  itemAt ( const QPoint & p ) const
+QTreeWidgetItem *  itemAt ( int x, int y ) const
+QTreeWidgetItem *  itemBelow ( const QTreeWidgetItem * item ) const
+QWidget *  itemWidget ( QTreeWidgetItem * item, int column ) const
+void  openPersistentEditor ( QTreeWidgetItem * item, int column = 0 )
+void  removeItemWidget ( QTreeWidgetItem * item, int column )
+QList<QTreeWidgetItem *>  selectedItems () const
+void  setColumnCount ( int columns )
+void  setCurrentItem ( QTreeWidgetItem * item )
+void  setCurrentItem ( QTreeWidgetItem * item, int column )
+void  setCurrentItem ( QTreeWidgetItem * item, int column, QItemSelectionModel::SelectionFlags command )
+void  setFirstItemColumnSpanned ( const QTreeWidgetItem * item, bool span )
+void  setHeaderItem ( QTreeWidgetItem * item )
+void  setHeaderLabel ( const QString & label )
+void  setHeaderLabels ( const QStringList & labels )
+void  setItemWidget ( QTreeWidgetItem * item, int column, QWidget * widget )
+int  sortColumn () const
+void  sortItems ( int column, Qt::SortOrder order )
+QTreeWidgetItem *  takeTopLevelItem ( int index )
+QTreeWidgetItem *  topLevelItem ( int index ) const
+int  topLevelItemCount () const
+QRect  visualItemRect ( const QTreeWidgetItem * item ) const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  setSelectionModel ( QItemSelectionModel * selectionModel )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  clear ()
+void  collapseItem ( const QTreeWidgetItem * item )
+void  expandItem ( const QTreeWidgetItem * item )
+void  scrollToItem ( const QTreeWidgetItem * item, QAbstractItemView::ScrollHint hint = EnsureVisible )

@@ -1,0 +1,6 @@
+
+enum	RegionType { Rectangle, Ellipse }
+{
+    QRegion::Rectangle	0	the region covers the entire rectangle.
+    QRegion::Ellipse	1	the region is an ellipse inside the rectangle.
+}

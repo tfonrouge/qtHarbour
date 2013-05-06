@@ -1,0 +1,80 @@
+/*
+ * $Id: qthQTableView.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname tableView
+
+CLASS QTableView FROM QAbstractItemView
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTableView ( QWidget * parent = 0 )
+~QTableView ()
+void  clearSpans ()
+int  columnAt ( int x ) const
+int  columnSpan ( int row, int column ) const
+int  columnViewportPosition ( int column ) const
+int  columnWidth ( int column ) const
+Qt::PenStyle  gridStyle () const
+QHeaderView *  horizontalHeader () const
+bool  isColumnHidden ( int column ) const
+bool  isCornerButtonEnabled () const
+bool  isRowHidden ( int row ) const
+bool  isSortingEnabled () const
+int  rowAt ( int y ) const
+int  rowHeight ( int row ) const
+int  rowSpan ( int row, int column ) const
+int  rowViewportPosition ( int row ) const
+void  setColumnHidden ( int column, bool hide )
+void  setColumnWidth ( int column, int width )
+void  setCornerButtonEnabled ( bool enable )
+void  setGridStyle ( Qt::PenStyle style )
+void  setHorizontalHeader ( QHeaderView * header )
+void  setRowHeight ( int row, int height )
+void  setRowHidden ( int row, bool hide )
+void  setSortingEnabled ( bool enable )
+void  setSpan ( int row, int column, int rowSpanCount, int columnSpanCount )
+void  setVerticalHeader ( QHeaderView * header )
+void  setWordWrap ( bool on )
+bool  showGrid () const
+void  sortByColumn ( int column, Qt::SortOrder order )
+QHeaderView *  verticalHeader () const
+bool  wordWrap () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QModelIndex  indexAt ( const QPoint & pos ) const
+virtual void  setModel ( QAbstractItemModel * model )
+virtual void  setRootIndex ( const QModelIndex & index )
+virtual void  setSelectionModel ( QItemSelectionModel * selectionModel )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  hideColumn ( int column )
+void  hideRow ( int row )
+void  resizeColumnToContents ( int column )
+void  resizeColumnsToContents ()
+void  resizeRowToContents ( int row )
+void  resizeRowsToContents ()
+void  selectColumn ( int column )
+void  selectRow ( int row )
+void  setShowGrid ( bool show )
+void  showColumn ( int column )
+void  showRow ( int row )

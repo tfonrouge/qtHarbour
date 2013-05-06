@@ -1,0 +1,35 @@
+/*
+ * $Id: qthQButtonGroup.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname buttonGroup
+
+CLASS QButtonGroup FROM QObject
+
+/********************/
+/* Public Functions */
+/********************/
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QButtonGroup ( QObject * parent = 0 )
+~QButtonGroup ()
+void  addButton ( QAbstractButton * button )
+void  addButton ( QAbstractButton * button, int id )
+QAbstractButton *  button ( int id ) const
+QList<QAbstractButton *>  buttons () const
+QAbstractButton *  checkedButton () const
+int  checkedId () const
+bool  exclusive () const
+int  id ( QAbstractButton * button ) const
+void  removeButton ( QAbstractButton * button )
+void  setExclusive ( bool )
+void  setId ( QAbstractButton * button, int id )

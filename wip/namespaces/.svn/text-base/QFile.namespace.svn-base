@@ -1,0 +1,26 @@
+
+typedef	DecoderFn
+typedef	EncoderFn
+enum	FileError { NoError, ReadError, WriteError, FatalError, ..., CopyError }
+enum	MemoryMapFlags { NoOptions }
+{
+    QFile::NoOptions	0	No options.
+}
+
+enum	Permission { ReadOwner, WriteOwner, ExeOwner, ReadUser, ..., ExeOther }
+{
+    QFile::ReadOwner	0x4000	The file is readable by the owner of the file.
+    QFile::WriteOwner	0x2000	The file is writable by the owner of the file.
+    QFile::ExeOwner	0x1000	The file is executable by the owner of the file.
+    QFile::ReadUser	0x0400	The file is readable by the user.
+    QFile::WriteUser	0x0200	The file is writable by the user.
+    QFile::ExeUser	0x0100	The file is executable by the user.
+    QFile::ReadGroup	0x0040	The file is readable by the group.
+    QFile::WriteGroup	0x0020	The file is writable by the group.
+    QFile::ExeGroup	0x0010	The file is executable by the group.
+    QFile::ReadOther	0x0004	The file is readable by anyone.
+    QFile::WriteOther	0x0002	The file is writable by anyone.
+    QFile::ExeOther	0x0001	The file is executable by anyone.
+}
+typedef	PermissionSpec
+flags	Permissions

@@ -1,0 +1,80 @@
+/*
+ * $Id: qthQFile.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QIODevice INHERITED
+
+#varname file
+
+CLASS QFile FROM QIODevice
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QFile ( const QString & name )
+QFile ( QObject * parent )
+QFile ( const QString & name, QObject * parent )
+~QFile ()
+bool  copy ( const QString & newName )
+FileError  error () const
+bool  exists () const
+QString  fileName () const
+bool  flush ()
+int  handle () const
+bool  link ( const QString & linkName )
+#if IMPLEMENTED
+uchar *  map ( qint64 offset, qint64 size, MemoryMapFlags flags = NoOptions )
+bool  open ( FILE * fh, OpenMode mode )
+bool  open ( int fd, OpenMode mode )
+Permissions  permissions () const
+bool  remove ()
+bool  rename ( const QString & newName )
+bool  resize ( qint64 sz )
+void  setFileName ( const QString & name )
+bool  setPermissions ( Permissions permissions )
+QString  symLinkTarget () const
+#if IMPLEMENTED
+bool  unmap ( uchar * address )
+void  unsetError ()
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  atEnd () const
+virtual void  close ()
+virtual bool  isSequential () const
+virtual bool  open ( OpenMode mode )
+virtual qint64  pos () const
+virtual bool  seek ( qint64 off )
+virtual qint64  size () const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+bool  copy ( const QString & fileName, const QString & newName )
+QString  decodeName ( const QByteArray & localFileName )
+QString  decodeName ( const char * localFileName )
+QByteArray  encodeName ( const QString & fileName )
+bool  exists ( const QString & fileName )
+bool  link ( const QString & fileName, const QString & linkName )
+Permissions  permissions ( const QString & fileName )
+bool  remove ( const QString & fileName )
+bool  rename ( const QString & oldName, const QString & newName )
+bool  resize ( const QString & fileName, qint64 sz )
+//void  setDecodingFunction ( DecoderFn function )
+//void  setEncodingFunction ( EncoderFn function )
+bool  setPermissions ( const QString & fileName, Permissions permissions )
+QString  symLinkTarget ( const QString & fileName )

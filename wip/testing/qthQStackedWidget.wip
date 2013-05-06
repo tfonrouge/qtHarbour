@@ -1,0 +1,37 @@
+/*
+ * $Id: qthQStackedWidget.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname stackedWidget
+
+CLASS QStackedWidget FROM QFrame
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QStackedWidget ( QWidget * parent = 0 )
+~QStackedWidget ()
+int  addWidget ( QWidget * widget )
+int  count () const
+int  currentIndex () const
+QWidget *  currentWidget () const
+int  indexOf ( QWidget * widget ) const
+int  insertWidget ( int index, QWidget * widget )
+void  removeWidget ( QWidget * widget )
+QWidget *  widget ( int index ) const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  setCurrentIndex ( int index )
+void  setCurrentWidget ( QWidget * widget )

@@ -1,0 +1,11 @@
+/*
+ * $Id: qthQt.wip 128 2011-04-14 15:49:46Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname qt
+
+CLASS Qt FROM QTHBASE

@@ -1,0 +1,34 @@
+/*
+ * $Id: qthQEventLoop.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname eventLoop
+
+CLASS QEventLoop FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QEventLoop ( QObject * parent = 0 )
+~QEventLoop ()
+int  exec ( ProcessEventsFlags flags = AllEvents )
+void  exit ( int returnCode = 0 )
+bool  isRunning () const
+bool  processEvents ( ProcessEventsFlags flags = AllEvents )
+void  processEvents ( ProcessEventsFlags flags, int maxTime )
+void  wakeUp ()
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  quit ()

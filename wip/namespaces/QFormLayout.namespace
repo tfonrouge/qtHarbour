@@ -1,0 +1,11 @@
+
+enum	FieldGrowthPolicy { FieldsStayAtSizeHint, ExpandingFieldsGrow, AllNonFixedFieldsGrow }
+enum	ItemRole { LabelRole, FieldRole, SpanningRole }
+{
+    QFormLayout::LabelRole	0	A label widget.
+    QFormLayout::FieldRole	1	A field widget.
+    QFormLayout::SpanningRole	2	A widget that spans label and field columns.
+}
+
+enum	RowWrapPolicy { DontWrapRows, WrapLongRows, WrapAllRows }
+

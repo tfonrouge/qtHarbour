@@ -1,0 +1,57 @@
+/*
+ * $Id: qthQToolBar.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname toolBar
+
+CLASS QToolBar FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QToolBar ( const QString & title, QWidget * parent = 0 )
+QToolBar ( QWidget * parent = 0 )
+~QToolBar ()
+QAction *  actionAt ( const QPoint & p ) const
+QAction *  actionAt ( int x, int y ) const
+void  addAction ( QAction * action )
+QAction *  addAction ( const QString & text )
+QAction *  addAction ( const QIcon & icon, const QString & text )
+QAction *  addAction ( const QString & text, const QObject * receiver, const char * member )
+QAction *  addAction ( const QIcon & icon, const QString & text, const QObject * receiver, const char * member )
+QAction *  addSeparator ()
+QAction *  addWidget ( QWidget * widget )
+Qt::ToolBarAreas  allowedAreas () const
+void  clear ()
+QSize  iconSize () const
+QAction *  insertSeparator ( QAction * before )
+QAction *  insertWidget ( QAction * before, QWidget * widget )
+bool  isAreaAllowed ( Qt::ToolBarArea area ) const
+bool  isFloatable () const
+bool  isFloating () const
+bool  isMovable () const
+Qt::Orientation  orientation () const
+void  setAllowedAreas ( Qt::ToolBarAreas areas )
+void  setFloatable ( bool floatable )
+void  setMovable ( bool movable )
+void  setOrientation ( Qt::Orientation orientation )
+QAction *  toggleViewAction () const
+Qt::ToolButtonStyle  toolButtonStyle () const
+QWidget *  widgetForAction ( QAction * action ) const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  setIconSize ( const QSize & iconSize )
+void  setToolButtonStyle ( Qt::ToolButtonStyle toolButtonStyle )

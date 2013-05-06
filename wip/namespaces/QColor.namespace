@@ -1,0 +1,9 @@
+
+enum	Spec { Rgb, Hsv, Cmyk, Hsl, Invalid }
+{
+    QColor::Rgb	1
+    QColor::Hsv	2
+    QColor::Cmyk	3
+    QColor::Hsl	4
+    QColor::Invalid	0
+}

@@ -1,0 +1,5 @@
+
+enum	ButtonSymbols { UpDownArrows, PlusMinus, NoButtons }
+enum	CorrectionMode { CorrectToPreviousValue, CorrectToNearestValue }
+flags	StepEnabled
+enum	StepEnabledFlag { StepNone, StepUpEnabled, StepDownEnabled }

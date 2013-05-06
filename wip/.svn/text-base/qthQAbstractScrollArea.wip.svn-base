@@ -1,0 +1,48 @@
+/*
+ * $Id: qthQAbstractScrollArea.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+//#begindump
+//#define QWidgetList QList<QWidget *>
+//#enddump
+
+#varname abstractScrollArea
+
+CLASS QAbstractScrollArea FROM QFrame
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QAbstractScrollArea ( QWidget * parent = 0 )
+~QAbstractScrollArea ()
+void  addScrollBarWidget ( QWidget * widget, Qt::Alignment alignment )
+QWidget *  cornerWidget () const
+QScrollBar *  horizontalScrollBar () const
+Qt::ScrollBarPolicy  horizontalScrollBarPolicy () const
+QSize  maximumViewportSize () const
+//QWidgetList  scrollBarWidgets ( Qt::Alignment alignment )
+void  setCornerWidget ( QWidget * widget )
+void  setHorizontalScrollBar ( QScrollBar * scrollBar )
+void  setHorizontalScrollBarPolicy ( Qt::ScrollBarPolicy )
+void  setVerticalScrollBar ( QScrollBar * scrollBar )
+void  setVerticalScrollBarPolicy ( Qt::ScrollBarPolicy )
+void  setViewport ( QWidget * widget )
+QScrollBar *  verticalScrollBar () const
+Qt::ScrollBarPolicy  verticalScrollBarPolicy () const
+QWidget *  viewport () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const

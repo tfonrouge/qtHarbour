@@ -1,0 +1,497 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces
+END
+QInputContext.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QInputContext.namespace
+END
+QVariant.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QVariant.namespace
+END
+QTextFrameFormat.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextFrameFormat.namespace
+END
+QTabWidget.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTabWidget.namespace
+END
+QMainWindow.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QMainWindow.namespace
+END
+QLayout.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QLayout.namespace
+END
+QFile.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFile.namespace
+END
+QDockWidget.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QDockWidget.namespace
+END
+QValidator.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QValidator.namespace
+END
+QProgressBar.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QProgressBar.namespace
+END
+QSizePolicy.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QSizePolicy.namespace
+END
+QMessageBox.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QMessageBox.namespace
+END
+QLineEdit.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QLineEdit.namespace
+END
+QClipboard.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QClipboard.namespace
+END
+Qt.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/Qt.namespace
+END
+QAbstractSpinBox.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QAbstractSpinBox.namespace
+END
+QAbstractSlider.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QAbstractSlider.namespace
+END
+QFont.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFont.namespace
+END
+QToolButton.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QToolButton.namespace
+END
+QTableWidgetItem.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTableWidgetItem.namespace
+END
+QMdiSubWindow.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QMdiSubWindow.namespace
+END
+QEventLoop.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QEventLoop.namespace
+END
+QCoreApplication.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QCoreApplication.namespace
+END
+QAbstractItemView.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QAbstractItemView.namespace
+END
+QPlainTextEdit.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QPlainTextEdit.namespace
+END
+QGraphicsScene.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QGraphicsScene.namespace
+END
+QGraphicsItem.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QGraphicsItem.namespace
+END
+QState.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QState.namespace
+END
+QRegion.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QRegion.namespace
+END
+QHash.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QHash.namespace
+END
+QTextDocument.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextDocument.namespace
+END
+QTextEdit.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextEdit.namespace
+END
+QFileInfo.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFileInfo.namespace
+END
+QSystemTrayIcon.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QSystemTrayIcon.namespace
+END
+QTextBlock.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextBlock.namespace
+END
+QSettings.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QSettings.namespace
+END
+QStyle.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QStyle.namespace
+END
+QFileIconProvider.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFileIconProvider.namespace
+END
+QStateMachine.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QStateMachine.namespace
+END
+QRubberBand.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QRubberBand.namespace
+END
+QList.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QList.namespace
+END
+QDate.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QDate.namespace
+END
+QChar.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QChar.namespace
+END
+QCalendarWidget.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QCalendarWidget.namespace
+END
+QSlider.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QSlider.namespace
+END
+QImage.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QImage.namespace
+END
+QItemSelectionModel.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QItemSelectionModel.namespace
+END
+QIcon.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QIcon.namespace
+END
+QGraphicsView.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QGraphicsView.namespace
+END
+QTabBar.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTabBar.namespace
+END
+QGradient.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QGradient.namespace
+END
+QPixmap.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QPixmap.namespace
+END
+QFileDialog.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFileDialog.namespace
+END
+QFormLayout.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFormLayout.namespace
+END
+QPrintPreviewWidget.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QPrintPreviewWidget.namespace
+END
+QUrl.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QUrl.namespace
+END
+QApplication.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QApplication.namespace
+END
+QAbstractAnimation.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QAbstractAnimation.namespace
+END
+QDialogButtonBox.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QDialogButtonBox.namespace
+END
+QComboBox.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QComboBox.namespace
+END
+QStackedLayout.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QStackedLayout.namespace
+END
+QAction.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QAction.namespace
+END
+QGraphicsEffect.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QGraphicsEffect.namespace
+END
+QTextOption.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextOption.namespace
+END
+QColor.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QColor.namespace
+END
+QDir.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QDir.namespace
+END
+QGesture.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QGesture.namespace
+END
+QKeySequence.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QKeySequence.namespace
+END
+QEvent.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QEvent.namespace
+END
+QTextCursor.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextCursor.namespace
+END
+QTreeWidgetItem.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTreeWidgetItem.namespace
+END
+QPrinter.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QPrinter.namespace
+END
+QWidget.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QWidget.namespace
+END
+QBoxLayout.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QBoxLayout.namespace
+END
+QIODevice.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QIODevice.namespace
+END
+QTextListFormat.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QTextListFormat.namespace
+END
+QRegExp.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QRegExp.namespace
+END
+QCompleter.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QCompleter.namespace
+END
+QFrame.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QFrame.namespace
+END
+QPalette.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QPalette.namespace
+END
+QPainter.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QPainter.namespace
+END
+QDateTimeEdit.namespace
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/qth/!svn/ver/151/trunk/wip/namespaces/QDateTimeEdit.namespace
+END

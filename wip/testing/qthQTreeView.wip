@@ -1,0 +1,93 @@
+/*
+ * $Id: qthQTreeView.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace QAbstractItemView INHERITED
+
+#varname treeView
+
+CLASS QTreeView FROM QAbstractItemView
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTreeView ( QWidget * parent = 0 )
+~QTreeView ()
+bool  allColumnsShowFocus () const
+int  autoExpandDelay () const
+int  columnAt ( int x ) const
+int  columnViewportPosition ( int column ) const
+int  columnWidth ( int column ) const
+bool  expandsOnDoubleClick () const
+QHeaderView *  header () const
+int  indentation () const
+QModelIndex  indexAbove ( const QModelIndex & index ) const
+QModelIndex  indexBelow ( const QModelIndex & index ) const
+bool  isAnimated () const
+bool  isColumnHidden ( int column ) const
+bool  isExpanded ( const QModelIndex & index ) const
+bool  isFirstColumnSpanned ( int row, const QModelIndex & parent ) const
+bool  isHeaderHidden () const
+bool  isRowHidden ( int row, const QModelIndex & parent ) const
+bool  isSortingEnabled () const
+bool  itemsExpandable () const
+bool  rootIsDecorated () const
+void  setAllColumnsShowFocus ( bool enable )
+void  setAnimated ( bool enable )
+void  setAutoExpandDelay ( int delay )
+void  setColumnHidden ( int column, bool hide )
+void  setColumnWidth ( int column, int width )
+void  setExpanded ( const QModelIndex & index, bool expanded )
+void  setExpandsOnDoubleClick ( bool enable )
+void  setFirstColumnSpanned ( int row, const QModelIndex & parent, bool span )
+void  setHeader ( QHeaderView * header )
+void  setHeaderHidden ( bool hide )
+void  setIndentation ( int i )
+void  setItemsExpandable ( bool enable )
+void  setRootIsDecorated ( bool show )
+void  setRowHidden ( int row, const QModelIndex & parent, bool hide )
+void  setSortingEnabled ( bool enable )
+void  setUniformRowHeights ( bool uniform )
+void  setWordWrap ( bool on )
+void  sortByColumn ( int column, Qt::SortOrder order )
+bool  uniformRowHeights () const
+bool  wordWrap () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  dataChanged ( const QModelIndex & topLeft, const QModelIndex & bottomRight )
+virtual QModelIndex  indexAt ( const QPoint & point ) const
+virtual void  keyboardSearch ( const QString & search )
+virtual void  reset ()
+virtual void  scrollTo ( const QModelIndex & index, ScrollHint hint = EnsureVisible )
+virtual void  selectAll ()
+virtual void  setModel ( QAbstractItemModel * model )
+virtual void  setRootIndex ( const QModelIndex & index )
+virtual void  setSelectionModel ( QItemSelectionModel * selectionModel )
+virtual QRect  visualRect ( const QModelIndex & index ) const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  collapse ( const QModelIndex & index )
+void  collapseAll ()
+void  expand ( const QModelIndex & index )
+void  expandAll ()
+void  expandToDepth ( int depth )
+void  hideColumn ( int column )
+void  resizeColumnToContents ( int column )
+void  showColumn ( int column )

@@ -1,0 +1,94 @@
+/*
+ * $Id: qthQDir.wip 134 2011-06-07 12:35:37Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#begindump
+#define NoFilter    0
+#define QFileInfoList   QList<QFileInfo>
+#enddump
+
+#varname dir
+
+CLASS QDir FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QDir ( const QDir & dir )
+QDir ( const QString & path = QString() )
+QDir ( const QString & path, const QString & nameFilter, SortFlags sort = SortFlags( Name | IgnoreCase ), Filters filters = AllEntries )
+~QDir ()
+QString  absoluteFilePath ( const QString & fileName ) const
+QString  absolutePath () const
+QString  canonicalPath () const
+bool  cd ( const QString & dirName )
+bool  cdUp ()
+uint  count () const
+QString  dirName () const
+QFileInfoList  entryInfoList ( const QStringList & nameFilters, Filters filters = NoFilter, SortFlags sort = NoSort ) const
+QFileInfoList  entryInfoList ( Filters filters = NoFilter, SortFlags sort = NoSort ) const
+QStringList  entryList ( const QStringList & nameFilters, Filters filters = NoFilter, SortFlags sort = NoSort ) const
+QStringList  entryList ( Filters filters = NoFilter, SortFlags sort = NoSort ) const
+bool  exists ( const QString & name ) const
+bool  exists () const
+QString  filePath ( const QString & fileName ) const
+Filters  filter () const
+bool  isAbsolute () const
+bool  isReadable () const
+bool  isRelative () const
+bool  isRoot () const
+bool  makeAbsolute ()
+bool  mkdir ( const QString & dirName ) const
+bool  mkpath ( const QString & dirPath ) const
+QStringList  nameFilters () const
+QString  path () const
+void  refresh () const
+QString  relativeFilePath ( const QString & fileName ) const
+bool  remove ( const QString & fileName )
+bool  rename ( const QString & oldName, const QString & newName )
+bool  rmdir ( const QString & dirName ) const
+bool  rmpath ( const QString & dirPath ) const
+void  setFilter ( Filters filters )
+void  setNameFilters ( const QStringList & nameFilters )
+void  setPath ( const QString & path )
+void  setSorting ( SortFlags sort )
+SortFlags  sorting () const
+bool  operator!= ( const QDir & dir ) const
+QDir &  operator= ( const QDir & dir )
+bool  operator== ( const QDir & dir ) const
+QString  operator[] ( int pos ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+void  addSearchPath ( const QString & prefix, const QString & path )
+QString  cleanPath ( const QString & path )
+QDir  current ()
+QString  currentPath ()
+QFileInfoList  drives ()
+QString  fromNativeSeparators ( const QString & pathName )
+QDir  home ()
+QString  homePath ()
+bool  isAbsolutePath ( const QString & path )
+bool  isRelativePath ( const QString & path )
+bool  match ( const QString & filter, const QString & fileName )
+bool  match ( const QStringList & filters, const QString & fileName )
+QDir  root ()
+QString  rootPath ()
+QStringList  searchPaths ( const QString & prefix )
+QChar  separator ()
+bool  setCurrent ( const QString & path )
+void  setSearchPaths ( const QString & prefix, const QStringList & searchPaths )
+QDir  temp ()
+QString  tempPath ()
+QString  toNativeSeparators ( const QString & pathName )

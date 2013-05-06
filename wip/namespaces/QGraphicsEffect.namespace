@@ -1,0 +1,4 @@
+
+enum  ChangeFlag { SourceAttached, SourceDetached, SourceBoundingRectChanged, SourceInvalidated }
+flags  ChangeFlags
+enum  PixmapPadMode { NoPad, PadToTransparentBorder, PadToEffectiveBoundingRect }

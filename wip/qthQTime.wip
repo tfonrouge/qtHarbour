@@ -1,0 +1,53 @@
+/*
+ * $Id: qthQTime.wip 128 2011-04-14 15:49:46Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname time
+
+CLASS QTime FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTime ()
+QTime ( int h, int m, int s = 0, int ms = 0 )
+QTime  addMSecs ( int ms ) const
+QTime  addSecs ( int s ) const
+int  elapsed () const
+int  hour () const
+bool  isNull () const
+bool  isValid () const
+int  minute () const
+int  msec () const
+int  msecsTo ( const QTime & t ) const
+int  restart ()
+int  second () const
+int  secsTo ( const QTime & t ) const
+bool  setHMS ( int h, int m, int s, int ms = 0 )
+void  start ()
+QString  toString ( const QString & format ) const
+QString  toString ( Qt::DateFormat format = Qt::TextDate ) const
+//bool  operator!= ( const QTime & t ) const
+//bool  operator< ( const QTime & t ) const
+//bool  operator<= ( const QTime & t ) const
+//bool  operator== ( const QTime & t ) const
+//bool  operator> ( const QTime & t ) const
+//bool  operator>= ( const QTime & t ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QTime  currentTime ()
+QTime  fromString ( const QString & string, Qt::DateFormat format = Qt::TextDate )
+QTime  fromString ( const QString & string, const QString & format )
+bool  isValid ( int h, int m, int s, int ms = 0 )

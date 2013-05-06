@@ -1,0 +1,2 @@
+
+enum	ToolButtonPopupMode { DelayedPopup, MenuButtonPopup, InstantPopup }

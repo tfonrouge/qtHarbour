@@ -1,0 +1,44 @@
+/*
+ * $Id: qthQAbstractAnimation.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname abstractAnimation
+
+CLASS QAbstractAnimation FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+//QAbstractAnimation ( QObject * parent = 0 )
+virtual  ~QAbstractAnimation ()
+int  currentLoop () const
+int  currentLoopTime () const
+int  currentTime () const
+Direction  direction () const
+virtual int  duration () const = 0
+QAnimationGroup *  group () const
+int  loopCount () const
+void  setDirection ( Direction direction )
+void  setLoopCount ( int loopCount )
+State  state () const
+int  totalDuration () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  pause ()
+void  resume ()
+void  setCurrentTime ( int msecs )
+void  setPaused ( bool paused )
+void  start ( QAbstractAnimation::DeletionPolicy policy = KeepWhenStopped )
+void  stop ()

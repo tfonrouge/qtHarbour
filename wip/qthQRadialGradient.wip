@@ -1,0 +1,31 @@
+/*
+ * $Id: qthQRadialGradient.wip 130 2011-04-20 15:54:25Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname radialGradient
+
+CLASS QRadialGradient FROM QGradient
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QRadialGradient ()
+QRadialGradient ( const QPointF & center, qreal radius, const QPointF & focalPoint )
+QRadialGradient ( qreal cx, qreal cy, qreal radius, qreal fx, qreal fy )
+QRadialGradient ( const QPointF & center, qreal radius )
+QRadialGradient ( qreal cx, qreal cy, qreal radius )
+QPointF  center () const
+QPointF  focalPoint () const
+qreal  radius () const
+void  setCenter ( const QPointF & center )
+void  setCenter ( qreal x, qreal y )
+void  setFocalPoint ( const QPointF & focalPoint )
+void  setFocalPoint ( qreal x, qreal y )
+void  setRadius ( qreal radius )

@@ -1,0 +1,31 @@
+/*
+ * $Id: qthQScrollBar.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname scrollBar
+
+CLASS QScrollBar FROM QAbstractSlider
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QScrollBar ( QWidget * parent = 0 )
+QScrollBar ( Qt::Orientation orientation, QWidget * parent = 0 )
+~QScrollBar ()
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  event ( QEvent * event )
+virtual QSize  sizeHint () const

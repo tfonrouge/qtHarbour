@@ -1,0 +1,41 @@
+/*
+ * $Id: qthQAbstractProxyModel.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname abstractProxyModel
+
+CLASS QAbstractProxyModel FROM QAbstractItemModel
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QAbstractProxyModel ( QObject * parent = 0 )
+~QAbstractProxyModel ()
+virtual QModelIndex  mapFromSource ( const QModelIndex & sourceIndex ) const = 0
+virtual QItemSelection  mapSelectionFromSource ( const QItemSelection & sourceSelection ) const
+virtual QItemSelection  mapSelectionToSource ( const QItemSelection & proxySelection ) const
+virtual QModelIndex  mapToSource ( const QModelIndex & proxyIndex ) const = 0
+virtual void  setSourceModel ( QAbstractItemModel * sourceModel )
+QAbstractItemModel *  sourceModel () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QVariant  data ( const QModelIndex & proxyIndex, int role = Qt::DisplayRole ) const
+virtual Qt::ItemFlags  flags ( const QModelIndex & index ) const
+virtual QVariant  headerData ( int section, Qt::Orientation orientation, int role ) const
+virtual QMap<int, QVariant>  itemData ( const QModelIndex & proxyIndex ) const
+virtual void  revert ()
+virtual bool  setData ( const QModelIndex & index, const QVariant & value, int role = Qt::EditRole )
+virtual bool  setHeaderData ( int section, Qt::Orientation orientation, const QVariant & value, int role = Qt::EditRole )
+virtual bool  submit ()

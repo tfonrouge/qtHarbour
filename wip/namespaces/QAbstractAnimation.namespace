@@ -1,0 +1,8 @@
+
+enum  DeletionPolicy { KeepWhenStopped, DeleteWhenStopped }
+{
+    QAbstractAnimation::KeepWhenStopped	0	The animation will not be deleted when stopped.
+    QAbstractAnimation::DeleteWhenStopped	1	The animation will be automatically deleted when stopped.
+}
+enum  Direction { Forward, Backward }
+enum  State { Stopped, Paused, Running }

@@ -1,0 +1,102 @@
+/*
+ * $Id: qthQLineEdit.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname lineEdit
+
+CLASS QLineEdit FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QLineEdit ( QWidget * parent = 0 )
+QLineEdit ( const QString & contents, QWidget * parent = 0 )
+~QLineEdit ()
+Qt::Alignment  alignment () const
+void  backspace ()
+QCompleter *  completer () const
+QMenu *  createStandardContextMenu ()
+void  cursorBackward ( bool mark, int steps = 1 )
+void  cursorForward ( bool mark, int steps = 1 )
+int  cursorPosition () const
+int  cursorPositionAt ( const QPoint & pos )
+void  cursorWordBackward ( bool mark )
+void  cursorWordForward ( bool mark )
+void  del ()
+void  deselect ()
+QString  displayText () const
+bool  dragEnabled () const
+EchoMode  echoMode () const
+void  end ( bool mark )
+void  getTextMargins ( int * left, int * top, int * right, int * bottom ) const
+bool  hasAcceptableInput () const
+bool  hasFrame () const
+bool  hasSelectedText () const
+void  home ( bool mark )
+QString  inputMask () const
+void  insert ( const QString & newText )
+bool  isModified () const
+bool  isReadOnly () const
+bool  isRedoAvailable () const
+bool  isUndoAvailable () const
+int  maxLength () const
+
+#if QT_VERSION >= 0x040700
+QString  placeholderText () const
+
+QString  selectedText () const
+int  selectionStart () const
+void  setAlignment ( Qt::Alignment flag )
+void  setCompleter ( QCompleter * c )
+void  setCursorPosition ( int )
+void  setDragEnabled ( bool b )
+void  setEchoMode ( EchoMode )
+void  setFrame ( bool )
+void  setInputMask ( const QString & inputMask )
+void  setMaxLength ( int )
+void  setModified ( bool )
+
+#if QT_VERSION >= 0x040700
+void  setPlaceholderText ( const QString & )
+void  setReadOnly ( bool )
+void  setSelection ( int start, int length )
+void  setTextMargins ( int left, int top, int right, int bottom )
+void  setTextMargins ( const QMargins & margins )
+void  setValidator ( const QValidator * v )
+QString  text () const
+QMargins  textMargins () const
+const QValidator *  validator () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  event ( QEvent * e )
+virtual QVariant  inputMethodQuery ( Qt::InputMethodQuery property ) const
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  clear ()
+void  copy () const
+void  cut ()
+void  paste ()
+void  redo ()
+void  selectAll ()
+void  setText ( const QString & )
+void  undo ()

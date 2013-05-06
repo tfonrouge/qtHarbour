@@ -1,0 +1,66 @@
+/*
+ * $Id: qthQDate.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname date
+
+CLASS QDate FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QDate ()
+QDate ( int y, int m, int d )
+QDate  addDays ( int ndays ) const
+QDate  addMonths ( int nmonths ) const
+QDate  addYears ( int nyears ) const
+int  day () const
+int  dayOfWeek () const
+int  dayOfYear () const
+int  daysInMonth () const
+int  daysInYear () const
+int  daysTo ( const QDate & d ) const
+void  getDate ( int * year, int * month, int * day )
+bool  isNull () const
+bool  isValid () const
+int  month () const
+bool  setDate ( int year, int month, int day )
+int  toJulianDay () const
+QString  toString ( const QString & format ) const
+QString  toString ( Qt::DateFormat format = Qt::TextDate ) const
+int  weekNumber ( int * yearNumber = 0 ) const
+int  year () const
+//bool  operator!= ( const QDate & d ) const
+//bool  operator< ( const QDate & d ) const
+//bool  operator<= ( const QDate & d ) const
+//bool  operator== ( const QDate & d ) const
+//bool  operator> ( const QDate & d ) const
+//bool  operator>= ( const QDate & d ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QDate  currentDate ()
+QDate  fromJulianDay ( int jd )
+QDate  fromString ( const QString & string, Qt::DateFormat format = Qt::TextDate )
+QDate  fromString ( const QString & string, const QString & format )
+bool  isLeapYear ( int year )
+bool  isValid ( int year, int month, int day )
+QString  longDayName ( int weekday )
+QString  longDayName ( int weekday, MonthNameType type )
+QString  longMonthName ( int month )
+QString  longMonthName ( int month, MonthNameType type )
+QString  shortDayName ( int weekday )
+QString  shortDayName ( int weekday, MonthNameType type )
+QString  shortMonthName ( int month )
+QString  shortMonthName ( int month, MonthNameType type )

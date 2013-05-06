@@ -1,0 +1,211 @@
+/*
+ * $Id: qthQApplication.wip 137 2011-07-20 06:29:59Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+namespace Qt
+
+#begindump
+static void qthApplication_Terminate( void* cargo )
+{
+    qth_itemListReleaseAll();
+}
+
+HB_CALL_ON_STARTUP_BEGIN( _end_ )
+hb_vmAtExit( qthApplication_Terminate, NULL );
+HB_CALL_ON_STARTUP_END( _end_ )
+
+static int argc;
+static char **argv;
+static QApplication* pQApp = NULL;
+
+HB_FUNC_STATIC( NEW )
+{
+    if(!pQApp)
+    {
+        argc = hb_cmdargARGC();
+        argv = hb_cmdargARGV();
+        pQApp = new QApplication( argc, argv );
+
+        qth_itemPushReturn( QtH::QApplication, pQApp );
+    }
+}
+
+#enddump
+
+#varname application
+
+CLASS QApplication FROM QCoreApplication
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+#register New
+
+//QApplication ( int & argc, char ** argv )
+//QApplication ( int & argc, char ** argv, bool GUIenabled )
+//QApplication ( int & argc, char ** argv, Type type )
+//QApplication ( Display * display, Qt::HANDLE visual = 0, Qt::HANDLE colormap = 0 )
+//QApplication ( Display * display, int & argc, char ** argv, Qt::HANDLE visual = 0, Qt::HANDLE colormap = 0 )
+//QApplication ( QApplication::QS60MainApplicationFactory factory, int & argc, char ** argv )
+virtual  ~QApplication ()
+virtual void  commitData ( QSessionManager & manager )
+QInputContext *  inputContext () const
+bool  isSessionRestored () const
+
+#if MacCarbon
+virtual bool  macEventFilter ( EventHandlerCallRef caller, EventRef event )
+
+#if Linux
+virtual bool  qwsEventFilter ( QWSEvent * event )
+
+#if Linux
+void  qwsSetCustomColors ( QRgb * colorTable, int start, int numColors )
+
+virtual void  saveState ( QSessionManager & manager )
+QString  sessionId () const
+QString  sessionKey () const
+void  setInputContext ( QInputContext * inputContext )
+QString  styleSheet () const
+
+#if Symbian
+virtual bool  symbianEventFilter ( const QSymbianEvent * event )
+
+#if Symbian
+int  symbianProcessEvent ( const QSymbianEvent * event )
+
+#if X11
+virtual bool  x11EventFilter ( XEvent * event )
+
+#if X11
+int  x11ProcessEvent ( XEvent * event )
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  notify ( QObject * receiver, QEvent * e )
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  aboutQt ()
+
+#if WinCE
+int  autoMaximizeThreshold () const
+
+bool  autoSipEnabled () const
+void  closeAllWindows ()
+
+#if WinCE
+void  setAutoMaximizeThreshold ( const int threshold )
+
+void  setAutoSipEnabled ( const bool enabled )
+void  setStyleSheet ( const QString & sheet )
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QWidget *  activeModalWidget ()
+QWidget *  activePopupWidget ()
+QWidget *  activeWindow ()
+void  alert ( QWidget * widget, int msec = 0 )
+//QWidgetList  allWidgets ()
+void  beep ()
+void  changeOverrideCursor ( const QCursor & cursor )
+QClipboard *  clipboard ()
+int  colorSpec ()
+int  cursorFlashTime ()
+QDesktopWidget *  desktop ()
+bool  desktopSettingsAware ()
+int  doubleClickInterval ()
+int  exec ()
+QWidget *  focusWidget ()
+QFont  font ()
+QFont  font ( const QWidget * widget )
+QFont  font ( const char * className )
+QFontMetrics  fontMetrics ()
+QSize  globalStrut ()
+bool  isEffectEnabled ( Qt::UIEffect effect )
+bool  isLeftToRight ()
+bool  isRightToLeft ()
+Qt::LayoutDirection  keyboardInputDirection ()
+int  keyboardInputInterval ()
+QLocale  keyboardInputLocale ()
+Qt::KeyboardModifiers  keyboardModifiers ()
+
+#if notDeprecated
+bool  keypadNavigationEnabled () (deprecated)
+
+Qt::LayoutDirection  layoutDirection ()
+Qt::MouseButtons  mouseButtons ()
+
+#if 0 // Embedded Linux/Symbian/WinCE
+Qt::NavigationMode  navigationMode ()
+
+QCursor *  overrideCursor ()
+QPalette  palette ()
+QPalette  palette ( const QWidget * widget )
+QPalette  palette ( const char * className )
+bool  quitOnLastWindowClosed ()
+
+#if 0 // Embedded Linux
+QDecoration &  qwsDecoration ()
+
+#if 0 // Embedded Linux
+void  qwsSetDecoration ( QDecoration * decoration )
+
+#if 0 // Embedded Linux
+QDecoration *  qwsSetDecoration ( const QString & decoration )
+
+void  restoreOverrideCursor ()
+void  setActiveWindow ( QWidget * active )
+void  setColorSpec ( int spec )
+void  setCursorFlashTime ( int )
+void  setDesktopSettingsAware ( bool on )
+void  setDoubleClickInterval ( int )
+void  setEffectEnabled ( Qt::UIEffect effect, bool enable = true )
+void  setFont ( const QFont & font, const char * className = 0 )
+void  setGlobalStrut ( const QSize & )
+void  setGraphicsSystem ( const QString & system )
+void  setKeyboardInputInterval ( int )
+void  setLayoutDirection ( Qt::LayoutDirection direction )
+
+#if 0 // Embedded Linux/Symbian/WinCE
+void  setNavigationMode ( Qt::NavigationMode mode )
+
+void  setOverrideCursor ( const QCursor & cursor )
+void  setPalette ( const QPalette & palette, const char * className = 0 )
+void  setQuitOnLastWindowClosed ( bool quit )
+void  setStartDragDistance ( int l )
+void  setStartDragTime ( int ms )
+void  setStyle ( QStyle * style )
+QStyle *  setStyle ( const QString & style )
+void  setWheelScrollLines ( int )
+void  setWindowIcon ( const QIcon & icon )
+int  startDragDistance ()
+int  startDragTime ()
+QStyle *  style ()
+void  syncX ()
+QWidget *  topLevelAt ( const QPoint & point )
+QWidget *  topLevelAt ( int x, int y )
+//QWidgetList  topLevelWidgets ()
+Type  type ()
+int  wheelScrollLines ()
+QWidget *  widgetAt ( const QPoint & point )
+QWidget *  widgetAt ( int x, int y )
+QIcon  windowIcon ()

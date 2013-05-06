@@ -1,0 +1,69 @@
+/*
+ * $Id: qthQDateTime.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname dateTime
+
+CLASS QDateTime FROM QTHBASE
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QDateTime ()
+QDateTime ( const QDate & date )
+QDateTime ( const QDate & date, const QTime & time, Qt::TimeSpec spec = Qt::LocalTime )
+QDateTime ( const QDateTime & other )
+~QDateTime ()
+QDateTime  addDays ( int ndays ) const
+QDateTime  addMSecs ( qint64 msecs ) const
+QDateTime  addMonths ( int nmonths ) const
+QDateTime  addSecs ( int s ) const
+QDateTime  addYears ( int nyears ) const
+QDate  date () const
+int  daysTo ( const QDateTime & other ) const
+bool  isNull () const
+bool  isValid () const
+qint64  msecsTo ( const QDateTime & other ) const
+int  secsTo ( const QDateTime & other ) const
+void  setDate ( const QDate & date )
+void  setMSecsSinceEpoch ( qint64 msecs )
+void  setTime ( const QTime & time )
+void  setTimeSpec ( Qt::TimeSpec spec )
+void  setTime_t ( uint seconds )
+QTime  time () const
+Qt::TimeSpec  timeSpec () const
+QDateTime  toLocalTime () const
+qint64  toMSecsSinceEpoch () const
+QString  toString ( const QString & format ) const
+QString  toString ( Qt::DateFormat format = Qt::TextDate ) const
+QDateTime  toTimeSpec ( Qt::TimeSpec specification ) const
+uint  toTime_t () const
+QDateTime  toUTC () const
+//bool  operator!= ( const QDateTime & other ) const
+//bool  operator< ( const QDateTime & other ) const
+//bool  operator<= ( const QDateTime & other ) const
+//QDateTime &  operator= ( const QDateTime & other )
+//bool  operator== ( const QDateTime & other ) const
+//bool  operator> ( const QDateTime & other ) const
+//bool  operator>= ( const QDateTime & other ) const
+
+/*                       */
+/* Static Public Members */
+/*                       */
+
+_Static_Public_Members_
+
+QDateTime  currentDateTime ()
+QDateTime  currentDateTimeUtc ()
+qint64  currentMSecsSinceEpoch ()
+QDateTime  fromMSecsSinceEpoch ( qint64 msecs )
+QDateTime  fromString ( const QString & string, Qt::DateFormat format = Qt::TextDate )
+QDateTime  fromString ( const QString & string, const QString & format )
+QDateTime  fromTime_t ( uint seconds )

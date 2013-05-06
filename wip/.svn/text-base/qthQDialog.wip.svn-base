@@ -1,0 +1,47 @@
+/*
+ * $Id: qthQDialog.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname dialog
+
+CLASS QDialog FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QDialog ( QWidget * parent = 0, Qt::WindowFlags f = 0 )
+~QDialog ()
+bool  isSizeGripEnabled () const
+int  result () const
+void  setModal ( bool modal )
+void  setResult ( int i )
+void  setSizeGripEnabled ( bool )
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual QSize  minimumSizeHint () const
+virtual void  setVisible ( bool visible )
+virtual QSize  sizeHint () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+virtual void  accept ()
+virtual void  done ( int r )
+int  exec ()
+void  open ()
+virtual void  reject ()

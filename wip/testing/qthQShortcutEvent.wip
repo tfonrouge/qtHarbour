@@ -1,0 +1,23 @@
+/*
+ * $Id: qthQShortcutEvent.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname shortcutEvent
+
+CLASS QShortcutEvent FROM QEvent
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QShortcutEvent ( const QKeySequence & key, int id, bool ambiguous = false )
+~QShortcutEvent ()
+bool  isAmbiguous () const
+const QKeySequence &  key () const
+int  shortcutId () const

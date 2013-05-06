@@ -1,0 +1,107 @@
+/*
+ * $Id: qthQTextDocument.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#begindump
+#include <QTextBlock>
+#include <QTextCursor>
+#enddump
+
+#varname textDocument
+
+CLASS QTextDocument FROM QObject
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QTextDocument ( QObject * parent = 0 )
+QTextDocument ( const QString & text, QObject * parent = 0 )
+~QTextDocument ()
+void  addResource ( int type, const QUrl & name, const QVariant & resource )
+void  adjustSize ()
+QVector<QTextFormat>  allFormats () const
+int  availableRedoSteps () const
+int  availableUndoSteps () const
+QTextBlock  begin () const
+int  blockCount () const
+QChar  characterAt ( int pos ) const
+int  characterCount () const
+virtual void  clear ()
+
+#if QT_VERSION >= 0x040700
+void  clearUndoRedoStacks ( Stacks stacksToClear = UndoAndRedoStacks )
+
+QTextDocument *  clone ( QObject * parent = 0 ) const
+QFont  defaultFont () const
+QString  defaultStyleSheet () const
+QTextOption  defaultTextOption () const
+QAbstractTextDocumentLayout *  documentLayout () const
+qreal  documentMargin () const
+void  drawContents ( QPainter * p, const QRectF & rect = QRectF() )
+QTextBlock  end () const
+QTextCursor  find ( const QString & subString, const QTextCursor & cursor, FindFlags options = 0 ) const
+QTextCursor  find ( const QRegExp & expr, const QTextCursor & cursor, FindFlags options = 0 ) const
+QTextCursor  find ( const QString & subString, int position = 0, FindFlags options = 0 ) const
+QTextCursor  find ( const QRegExp & expr, int position = 0, FindFlags options = 0 ) const
+QTextBlock  findBlock ( int pos ) const
+QTextBlock  findBlockByLineNumber ( int lineNumber ) const
+QTextBlock  findBlockByNumber ( int blockNumber ) const
+QTextBlock  firstBlock () const
+qreal  idealWidth () const
+qreal  indentWidth () const
+bool  isEmpty () const
+bool  isModified () const
+bool  isRedoAvailable () const
+bool  isUndoAvailable () const
+bool  isUndoRedoEnabled () const
+QTextBlock  lastBlock () const
+int  lineCount () const
+void  markContentsDirty ( int position, int length )
+int  maximumBlockCount () const
+QString  metaInformation ( MetaInformation info ) const
+QTextObject *  object ( int objectIndex ) const
+QTextObject *  objectForFormat ( const QTextFormat & f ) const
+int  pageCount () const
+QSizeF  pageSize () const
+void  print ( QPrinter * printer ) const
+void  redo ( QTextCursor * cursor )
+QVariant  resource ( int type, const QUrl & name ) const
+int  revision () const
+QTextFrame *  rootFrame () const
+void  setDefaultFont ( const QFont & font )
+void  setDefaultStyleSheet ( const QString & sheet )
+void  setDefaultTextOption ( const QTextOption & option )
+void  setDocumentLayout ( QAbstractTextDocumentLayout * layout )
+void  setDocumentMargin ( qreal margin )
+void  setHtml ( const QString & html )
+void  setIndentWidth ( qreal width )
+void  setMaximumBlockCount ( int maximum )
+void  setMetaInformation ( MetaInformation info, const QString & string )
+void  setPageSize ( const QSizeF & size )
+void  setPlainText ( const QString & text )
+void  setTextWidth ( qreal width )
+void  setUndoRedoEnabled ( bool enable )
+void  setUseDesignMetrics ( bool b )
+QSizeF  size () const
+qreal  textWidth () const
+QString  toHtml ( const QByteArray & encoding = QByteArray() ) const
+QString  toPlainText () const
+void  undo ( QTextCursor * cursor )
+bool  useDesignMetrics () const
+
+/*              */
+/* Public Slots */
+/*              */
+
+_Public_Slots_
+
+void  redo ()
+void  setModified ( bool m = true )
+void  undo ()

@@ -1,0 +1,67 @@
+/*
+ * $Id: qthQGridLayout.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname gridLayout
+
+CLASS QGridLayout FROM QLayout
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QGridLayout ( QWidget * parent )
+QGridLayout ()
+~QGridLayout ()
+void  addItem ( QLayoutItem * item, int row, int column, int rowSpan = 1, int columnSpan = 1, Qt::Alignment alignment = 0 )
+void  addLayout ( QLayout * layout, int row, int column, Qt::Alignment alignment = 0 )
+void  addLayout ( QLayout * layout, int row, int column, int rowSpan, int columnSpan, Qt::Alignment alignment = 0 )
+void  addWidget ( QWidget * widget, int row, int column, Qt::Alignment alignment = 0 )
+void  addWidget ( QWidget * widget, int fromRow, int fromColumn, int rowSpan, int columnSpan, Qt::Alignment alignment = 0 )
+QRect  cellRect ( int row, int column ) const
+int  columnCount () const
+int  columnMinimumWidth ( int column ) const
+int  columnStretch ( int column ) const
+void  getItemPosition ( int index, int * row, int * column, int * rowSpan, int * columnSpan )
+int  horizontalSpacing () const
+QLayoutItem *  itemAtPosition ( int row, int column ) const
+Qt::Corner  originCorner () const
+int  rowCount () const
+int  rowMinimumHeight ( int row ) const
+int  rowStretch ( int row ) const
+void  setColumnMinimumWidth ( int column, int minSize )
+void  setColumnStretch ( int column, int stretch )
+void  setHorizontalSpacing ( int spacing )
+void  setOriginCorner ( Qt::Corner corner )
+void  setRowMinimumHeight ( int row, int minSize )
+void  setRowStretch ( int row, int stretch )
+void  setSpacing ( int spacing )
+void  setVerticalSpacing ( int spacing )
+int  spacing () const
+int  verticalSpacing () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual int  count () const
+virtual Qt::Orientations  expandingDirections () const
+virtual bool  hasHeightForWidth () const
+virtual int  heightForWidth ( int w ) const
+virtual void  invalidate ()
+virtual QLayoutItem *  itemAt ( int index ) const
+virtual QSize  maximumSize () const
+virtual int  minimumHeightForWidth ( int w ) const
+virtual QSize  minimumSize () const
+virtual void  setGeometry ( const QRect & rect )
+virtual QSize  sizeHint () const
+virtual QLayoutItem *  takeAt ( int index )

@@ -1,0 +1,59 @@
+
+enum  Type { Invalid, BitArray, Bitmap, Bool, ..., UserType }
+{
+    QVariant::Invalid	0	no type
+    QVariant::BitArray	13	a QBitArray
+    QVariant::Bitmap	73	a QBitmap
+    QVariant::Bool	1	a bool
+    QVariant::Brush	66	a QBrush
+    QVariant::ByteArray	12	a QByteArray
+    QVariant::Char	7	a QChar
+    QVariant::Color	67	a QColor
+    QVariant::Cursor	74	a QCursor
+    QVariant::Date	14	a QDate
+    QVariant::DateTime	16	a QDateTime
+    QVariant::Double	6	a double
+    QVariant::EasingCurve	29	a QEasingCurve
+    QVariant::Font	64	a QFont
+    QVariant::Hash	28	a QVariantHash
+    QVariant::Icon	69	a QIcon
+    QVariant::Image	70	a QImage
+    QVariant::Int	2	an int
+    QVariant::KeySequence	76	a QKeySequence
+    QVariant::Line	23	a QLine
+    QVariant::LineF	24	a QLineF
+    QVariant::List	9	a QVariantList
+    QVariant::Locale	18	a QLocale
+    QVariant::LongLong	4	a qlonglong
+    QVariant::Map	8	a QVariantMap
+    QVariant::Matrix	80	a QMatrix(obsolete)
+    QVariant::Transform	81	a QTransform
+    QVariant::Matrix4x4	82	a QMatrix4x4
+    QVariant::Palette	68	a QPalette
+    QVariant::Pen	77	a QPen
+    QVariant::Pixmap	65	a QPixmap
+    QVariant::Point	25	a QPoint
+//    QVariant::PointArray	Polygon	a QPointArray
+    QVariant::PointF	26	a QPointF
+    QVariant::Polygon	71	a QPolygon
+    QVariant::Quaternion	86	a QQuaternion
+    QVariant::Rect	19	a QRect
+    QVariant::RectF	20	a QRectF
+    QVariant::RegExp	27	a QRegExp
+    QVariant::Region	72	a QRegion
+    QVariant::Size	21	a QSize
+    QVariant::SizeF	22	a QSizeF
+    QVariant::SizePolicy	75	a QSizePolicy
+    QVariant::String	10	a QString
+    QVariant::StringList	11	a QStringList
+    QVariant::TextFormat	79	a QTextFormat
+    QVariant::TextLength	78	a QTextLength
+    QVariant::Time	15	a QTime
+    QVariant::UInt	3	a uint
+    QVariant::ULongLong	5	a qulonglong
+    QVariant::Url	17	a QUrl
+    QVariant::Vector2D	83	a QVector2D
+    QVariant::Vector3D	84	a QVector3D
+    QVariant::Vector4D	85	a QVector4D
+    QVariant::UserType	127	Base value for user-defined types.
+}

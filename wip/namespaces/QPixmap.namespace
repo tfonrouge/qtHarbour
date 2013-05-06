@@ -1,0 +1,4 @@
+
+enum	HBitmapFormat { NoAlpha, PremultipliedAlpha, Alpha }
+enum	ShareMode { ImplicitlyShared, ExplicitlyShared }
+

@@ -1,0 +1,2 @@
+
+enum	Direction { LeftToRight, RightToLeft, TopToBottom, BottomToTop }

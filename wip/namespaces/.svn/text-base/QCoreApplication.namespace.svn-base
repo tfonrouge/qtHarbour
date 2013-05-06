@@ -1,0 +1,3 @@
+
+enum	Encoding { CodecForTr, UnicodeUTF8, DefaultCodec }
+typedef	EventFilter

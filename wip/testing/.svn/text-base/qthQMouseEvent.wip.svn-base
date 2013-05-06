@@ -1,0 +1,26 @@
+/*
+ * $Id: qthQMouseEvent.wip 139 2011-07-23 05:56:29Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname mouseEvent
+
+CLASS QMouseEvent FROM QInputEvent
+// qthbegin
+Public Functions
+QMouseEvent ( Type type, const QPoint & position, Qt::MouseButton button, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers )
+QMouseEvent ( Type type, const QPoint & pos, const QPoint & globalPos, Qt::MouseButton button, Qt::MouseButtons buttons, Qt::KeyboardModifiers modifiers )
+Qt::MouseButton	button () const
+Qt::MouseButtons	buttons () const
+const QPoint &	globalPos () const
+int	globalX () const
+int	globalY () const
+const QPoint &	pos () const
+QPointF	posF () const
+int	x () const
+int	y () const
+
+// qthend

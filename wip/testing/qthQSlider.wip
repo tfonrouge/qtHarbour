@@ -1,0 +1,36 @@
+/*
+ * $Id: qthQSlider.wip 126 2011-04-12 15:44:57Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+
+#varname slider
+
+CLASS QSlider FROM QAbstractSlider
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QSlider ( QWidget * parent = 0 )
+QSlider ( Qt::Orientation orientation, QWidget * parent = 0 )
+~QSlider ()
+void  setTickInterval ( int ti )
+void  setTickPosition ( TickPosition position )
+int  tickInterval () const
+TickPosition  tickPosition () const
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual bool  event ( QEvent * event )
+virtual QSize  minimumSizeHint () const
+virtual QSize  sizeHint () const

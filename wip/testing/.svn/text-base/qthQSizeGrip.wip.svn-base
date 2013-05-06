@@ -1,0 +1,29 @@
+/*
+ * $Id: qthQSizeGrip.wip 130 2011-04-20 15:54:25Z tfonrouge $
+ *
+ * (C) 2011. qtHarbour     http://sourceforge.net/projects/qth/
+ * (C) 2011. Teo Fonrouge  <tfonrouge/at/gmail/dot/com>
+ *
+ */
+
+#varname sizeGrip
+
+CLASS QSizeGrip FROM QWidget
+
+/*                  */
+/* Public Functions */
+/*                  */
+
+_Public_Functions_
+
+QSizeGrip ( QWidget * parent )
+~QSizeGrip ()
+
+/*                                */
+/* Reimplemented Public Functions */
+/*                                */
+
+_Reimplemented_Public_Functions_
+
+virtual void  setVisible ( bool visible )
+virtual QSize  sizeHint () const
