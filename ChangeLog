@@ -2,6 +2,10 @@
  * $Id: ChangeLog 157 2012-12-21 05:46:46Z tfonrouge $
  */
 
+Fri Jan 22 01:18:31 UTC 2016 Teo Fonrouge (tfonrouge@gmail.com)
+  M WipGen/wip_lib.prg
+    ! fixed call to super class (::super) per current Harbour specification
+
 2012-12-20 23:46 UTC-0600 Teo Fonrouge (teo/at/windtelsoft/dot/com)
   -  config
   -  config/qtHarbour.qmk

@@ -785,7 +785,7 @@ METHOD FUNCTION _hb_par_ CLASS TType_void
         RETURN "hb_parptr( " + ::paramIndexStr + " )"
     ENDIF
 
-RETURN Super:_hb_par_
+RETURN ::super:_hb_par_
 
 METHOD PROCEDURE BuildReturnSection() CLASS TType_void
     ::retPrefix := ""
@@ -828,7 +828,7 @@ METHOD _hb_par_ CLASS TType_Char
         RETURN "hb_parc( " + ::paramIndexStr + " )"
     ENDIF
 
-RETURN Super:_hb_par_
+RETURN ::super:_hb_par_
 
 METHOD PROCEDURE BuildReturnSection() CLASS TType_Char
     IF ::isPointer
@@ -842,7 +842,7 @@ METHOD PROCEDURE BuildReturnSection() CLASS TType_Char
         ENDIF
         ::retFooter += "&" + ::targetName + ", 1 );"
     ENDIF
-    Super:BuildReturnSection()
+    ::super:BuildReturnSection()
 RETURN
 
 /*
@@ -1199,7 +1199,7 @@ ENDCLASS
     Teo. Mexico 2012
 */
 METHOD PROCEDURE BuildParameterSection() CLASS TType_QVariant
-    Super:BuildParameterSection()
+    ::super:BuildParameterSection()
     ::_paramCheckString_Prefix := "qth_IsJuana( " + ::paramIndexStr
 RETURN
 
